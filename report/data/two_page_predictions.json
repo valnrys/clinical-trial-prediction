@@ -1,0 +1,133 @@
+{
+  "rows": [
+    {
+      "id": "1a",
+      "label": "Trials that succeed, per 100",
+      "expected": "45 to 50",
+      "observed": "50.6 (47.9 to 53.4)",
+      "mark": "near",
+      "verdict": "outside, but the interval overlaps the range",
+      "source": "results/test_final2_item7_scorecard.md: row 1a"
+    },
+    {
+      "id": "1b",
+      "label": "Baseline over-predicts success, per 100",
+      "expected": "+5 to +9",
+      "observed": "+4.6 (+1.9 to +7.3)",
+      "mark": "near",
+      "verdict": "outside, but the interval overlaps the range",
+      "source": "results/test_final2_item7_scorecard.md: row 1b"
+    },
+    {
+      "id": "2a",
+      "label": "Baseline AUROC",
+      "expected": "0.660 to 0.720",
+      "observed": "0.730 (0.698 to 0.761)",
+      "mark": "near",
+      "verdict": "outside, but the interval overlaps the range",
+      "source": "results/test_final2_item7_scorecard.md: row 2a"
+    },
+    {
+      "id": "2b",
+      "label": "Registration fields that matter most",
+      "expected": "Phase, sponsor class",
+      "observed": "Phase, sponsor class (same)",
+      "mark": "in",
+      "verdict": "matches",
+      "source": "results/test_final2_item7_scorecard.md: line '2b. Predicted ... Observed ...'"
+    },
+    {
+      "id": "3",
+      "label": "AUROC gain from leaked fields",
+      "expected": "+0.020 to +0.050",
+      "observed": "+0.048 (+0.030 to +0.067)",
+      "mark": "in",
+      "verdict": "inside the predicted range",
+      "source": "results/test_final2_item7_scorecard.md: row 3"
+    },
+    {
+      "id": "4a",
+      "label": "Biologics against small molecules, per 100",
+      "expected": "63 against 58 per 100",
+      "observed": "+4.5 (−2.2 to +11.1)",
+      "mark": "none",
+      "verdict": "no range in the email",
+      "source": "results/test_final2_item7_scorecard.md: row 4a"
+    },
+    {
+      "id": "4b",
+      "label": "AUROC gain from knowing drug type",
+      "expected": "below +0.010",
+      "observed": "−0.000 (−0.004 to +0.004)",
+      "mark": "in",
+      "verdict": "inside the predicted range",
+      "source": "results/test_final2_item7_scorecard.md: row 4b"
+    },
+    {
+      "id": "5a",
+      "label": "Active control against placebo, per 100",
+      "expected": "−10 to −3",
+      "observed": "−0.1 (−8.6 to +8.3)",
+      "mark": "near",
+      "verdict": "outside, but the interval overlaps the range",
+      "source": "results/test_final2_item7_scorecard.md: row 5a"
+    },
+    {
+      "id": "5b",
+      "label": "Under 100 against 300+ participants, per 100",
+      "expected": "−28 to −18",
+      "observed": "−34.3 (−40.5 to −27.6)",
+      "mark": "near",
+      "verdict": "outside, but the interval overlaps the range",
+      "source": "results/test_final2_item7_scorecard.md: row 5b"
+    },
+    {
+      "id": "6a",
+      "label": "Success with genetic support, per 100",
+      "expected": "+5 to +13",
+      "observed": "+17.3 (+9.8 to +24.4)",
+      "mark": "near",
+      "verdict": "outside, but the interval overlaps the range",
+      "source": "results/test_final2_item7_scorecard.md: row 6a"
+    },
+    {
+      "id": "6b",
+      "label": "Same, drugs with 5 or fewer earlier trials, per 100",
+      "expected": "weaker (no figure)",
+      "observed": "+2.9 (−16.5 to +21.4)",
+      "mark": "none",
+      "verdict": "no range in the email",
+      "source": "results/test_final2_item7_scorecard.md: row 6b"
+    },
+    {
+      "id": "7a",
+      "label": "Rare-disease recruitment stops, ratio, non-cancer",
+      "expected": "about 1.2",
+      "observed": "1.00 (0.70 to 1.33)",
+      "mark": "none",
+      "verdict": "no range in the email",
+      "source": "results/test_final2_item7_scorecard.md: row 7a"
+    },
+    {
+      "id": "7b",
+      "label": "Success in rare disease, per 100",
+      "expected": "−18 to −8",
+      "observed": "−0.7 (−8.8 to +7.5)",
+      "mark": "near",
+      "verdict": "outside, but the interval overlaps the range",
+      "source": "results/test_final2_item7_scorecard.md: row 7b"
+    }
+  ],
+  "second_round": {
+    "met": 5,
+    "total": 9,
+    "not_met": [
+      "2",
+      "5",
+      "7 (second part)",
+      "8a"
+    ],
+    "rule": "interval wholly on the expected side of zero",
+    "source": "results/test_final2.md: every 'Verdict' line"
+  }
+}

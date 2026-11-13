@@ -1,0 +1,53 @@
+{
+  "what": "Gain in AUROC over the registration baseline from adding the precedent flag (strict: experimental arms only), 95% intervals.",
+  "rows": [
+    {
+      "id": "today",
+      "label": "Today's databases",
+      "development": {
+        "estimate": 0.01,
+        "lo": 0.004,
+        "hi": 0.016,
+        "source": "results/dev_precedent.md: row 'logistic: registration + precedent (today's links, experimental arms only)', column 'gain over registration, lead drugs resampled'"
+      },
+      "test": {
+        "estimate": 0.011,
+        "lo": 0.002,
+        "hi": 0.021,
+        "source": "results/test_final2.md: row 'logistic: registration + precedent (today's links, experimental arms only)', column 'AUROC minus logistic: registration'"
+      }
+    },
+    {
+      "id": "targets",
+      "label": "Targets dated to mid 2020",
+      "development": {
+        "estimate": 0.007,
+        "lo": 0.001,
+        "hi": 0.013,
+        "source": "results/dev_precedent.md: row 'logistic: registration + precedent (2020 links, experimental arms only)', column 'gain over registration, lead drugs resampled'"
+      },
+      "test": {
+        "estimate": -0.001,
+        "lo": -0.009,
+        "hi": 0.008,
+        "source": "results/test_final2.md: row 'logistic: registration + precedent (2020 links, experimental arms only)', column 'AUROC minus logistic: registration'"
+      }
+    },
+    {
+      "id": "names",
+      "label": "Drug names and targets dated to mid 2020",
+      "development": {
+        "estimate": 0.007,
+        "lo": 0.001,
+        "hi": 0.013,
+        "source": "results/dev_precedent.md: row 'logistic: registration + precedent (2020 names and links, experimental arms only)', column 'gain over registration, lead drugs resampled'"
+      },
+      "test": {
+        "estimate": -0.0,
+        "lo": -0.008,
+        "hi": 0.009,
+        "source": "results/test_final2.md: row 'logistic: registration + precedent (2020 names and links, experimental arms only)', column 'AUROC minus logistic: registration'"
+      }
+    }
+  ]
+}

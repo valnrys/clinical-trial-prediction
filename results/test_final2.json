@@ -1,0 +1,2923 @@
+{
+ "dry_run": false,
+ "rehearsal_on_made_up_labels": false,
+ "plan_commit": "441e3142f3c0eb041246d2a47d3ee50452f307ce",
+ "code_commit": "441e3142f3c0eb041246d2a47d3ee50452f307ce",
+ "re_run": null,
+ "purpose": "TEST_PLAN_2.md: the second scoring of the test set (items 1 to 8), one opening, which also supplies the late-set labels (2024 to 2025) that item 7 needs",
+ "scored": {
+  "n": 1236,
+  "success_per_100": 50.64724919093852,
+  "what": "test trials (2021 to 2023)"
+ },
+ "n_train": 5849,
+ "models": [
+  "logistic: registration",
+  "hierarchical: registration only",
+  "hierarchical: + target",
+  "hierarchical: + condition",
+  "hierarchical: + sponsor",
+  "hierarchical: full hierarchy",
+  "hierarchical: full + precedent + genetics",
+  "hierarchical: registration only [2020 links]",
+  "hierarchical: + target [2020 links]",
+  "hierarchical: + condition [2020 links]",
+  "hierarchical: + sponsor [2020 links]",
+  "hierarchical: full hierarchy [2020 links]",
+  "hierarchical: full + precedent + genetics [2020 links]",
+  "logistic: registration + precedent (today's links)",
+  "logistic: registration + precedent (2020 links)",
+  "logistic: registration + precedent (2020 names and links)",
+  "logistic: registration + precedent (today's links, experimental arms only)",
+  "logistic: registration + precedent (2020 links, experimental arms only)",
+  "logistic: registration + precedent (2020 names and links, experimental arms only)",
+  "logistic: HOW (today's links)",
+  "logistic: WHAT (today's links)",
+  "logistic: WHAT + phase (today's links)",
+  "logistic: HOW + WHAT (today's links)",
+  "logistic: WHAT (today's links, own lead drug excluded)",
+  "logistic: WHAT + phase (today's links, own lead drug excluded)",
+  "logistic: HOW + WHAT (today's links, own lead drug excluded)",
+  "logistic: HOW (2020 links)",
+  "logistic: WHAT (2020 links)",
+  "logistic: WHAT + phase (2020 links)",
+  "logistic: HOW + WHAT (2020 links)",
+  "logistic: WHAT (2020 links, own lead drug excluded)",
+  "logistic: WHAT + phase (2020 links, own lead drug excluded)",
+  "logistic: HOW + WHAT (2020 links, own lead drug excluded)",
+  "logistic: HOW (2020 names and links)",
+  "logistic: WHAT (2020 names and links)",
+  "logistic: WHAT + phase (2020 names and links)",
+  "logistic: HOW + WHAT (2020 names and links)",
+  "logistic: WHAT (2020 names and links, own lead drug excluded)",
+  "logistic: WHAT + phase (2020 names and links, own lead drug excluded)",
+  "logistic: HOW + WHAT (2020 names and links, own lead drug excluded)"
+ ],
+ "seconds": {
+  "fit_and_predict": 82.48674108274281,
+  "dress": 4.837630832567811,
+  "total": 156.28206633217633,
+  "per_model": {
+   "logistic: registration": 0.05662574991583824,
+   "hierarchical: registration only": 0.19328616745769978,
+   "hierarchical: + target": 1.007073875516653,
+   "hierarchical: + condition": 0.23896795883774757,
+   "hierarchical: + sponsor": 0.23661299981176853,
+   "hierarchical: full hierarchy": 1.1691208751872182,
+   "hierarchical: full + precedent + genetics": 1.1602894579991698,
+   "hierarchical: registration only [2020 links]": 0.561315624974668,
+   "hierarchical: + target [2020 links]": 0.7730636252090335,
+   "hierarchical: + condition [2020 links]": 0.2599923750385642,
+   "hierarchical: + sponsor [2020 links]": 0.23607716616243124,
+   "hierarchical: full hierarchy [2020 links]": 0.8995816251263022,
+   "hierarchical: full + precedent + genetics [2020 links]": 0.9301496660336852,
+   "logistic: registration + precedent (today's links)": 0.033816125243902206,
+   "logistic: registration + precedent (2020 links)": 0.0289941243827343,
+   "logistic: registration + precedent (2020 names and links)": 0.03031708300113678,
+   "logistic: registration + precedent (today's links, experimental arms only)": 0.03271137457340956,
+   "logistic: registration + precedent (2020 links, experimental arms only)": 0.03840320743620396,
+   "logistic: registration + precedent (2020 names and links, experimental arms only)": 0.05448583420366049,
+   "logistic: HOW (today's links)": 0.028471291065216064,
+   "logistic: WHAT (today's links)": 0.11231179162859917,
+   "logistic: WHAT + phase (today's links)": 0.1372333336621523,
+   "logistic: HOW + WHAT (today's links)": 0.10547891724854708,
+   "logistic: WHAT (today's links, own lead drug excluded)": 0.10821129102259874,
+   "logistic: WHAT + phase (today's links, own lead drug excluded)": 0.10079708322882652,
+   "logistic: HOW + WHAT (today's links, own lead drug excluded)": 0.14210829138755798,
+   "logistic: HOW (2020 links)": 0.027404792606830597,
+   "logistic: WHAT (2020 links)": 0.10204395744949579,
+   "logistic: WHAT + phase (2020 links)": 0.09316083323210478,
+   "logistic: HOW + WHAT (2020 links)": 0.10502837412059307,
+   "logistic: WHAT (2020 links, own lead drug excluded)": 0.09877783339470625,
+   "logistic: WHAT + phase (2020 links, own lead drug excluded)": 0.09528574999421835,
+   "logistic: HOW + WHAT (2020 links, own lead drug excluded)": 0.10930954199284315,
+   "logistic: HOW (2020 names and links)": 0.027027334086596966,
+   "logistic: WHAT (2020 names and links)": 0.09908462502062321,
+   "logistic: WHAT + phase (2020 names and links)": 0.09697020798921585,
+   "logistic: HOW + WHAT (2020 names and links)": 0.11527845822274685,
+   "logistic: WHAT (2020 names and links, own lead drug excluded)": 0.109418417327106,
+   "logistic: WHAT + phase (2020 names and links, own lead drug excluded)": 0.09807750023901463,
+   "logistic: HOW + WHAT (2020 names and links, own lead drug excluded)": 0.1073737908154726
+  }
+ },
+ "access_log_entries": 4,
+ "input_sha256": {
+  "data/interim/.gitkeep": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data/interim/condition.parquet": "0bd9265d9c185755b132886f06e0418270e65657e9043c446262b6f4d1499c38",
+  "data/interim/dev.parquet": "ba8aca28a45f891fd3b77150ee23786bd63f841b4cbc1e7b72b7ac900fd82929",
+  "data/interim/embeddings_biomedical.parquet": "817c2ae0ccac5acc686d567b6694feb5ad12003d360d8d3f90d0a50c555c4e52",
+  "data/interim/embeddings_general.parquet": "235b6adc00fe95d6045e2a4a3b75736596dc1d3841f067b94688b09ff4fbf458",
+  "data/interim/endpoint.parquet": "f69ab906d1e640e115386abf23b9b9f3e097ba2b0290f23e60e7a415b371a450",
+  "data/interim/genetics.parquet": "4137b78a29238b936a7e7dad1897efe0ac123339e2e18f99d5b453f806e371b9",
+  "data/interim/history.parquet": "d4cbd725a10e99ed017aadf591b008b020424e9a9ba42723c278aeb33b0076f9",
+  "data/interim/investigational_drugs.parquet": "f945169b2f9bc7f0599a67fea2a35d71789f0bcf16b40fc94572231001c9f143",
+  "data/interim/llm_predictions.parquet": "6f6a8bbe942dccc341a33062c6b5c6e94feeaba6f364775c62c66df69039cc53",
+  "data/interim/precedent.parquet": "76b8516b57592da985f4449e0e3a24cadbc7491046b7cbee9e1c910c535ffc22",
+  "data/interim/precedent_registry.parquet": "a0dc9c916b290aba5e00349d554475baaf9b87e134316ebed5eed7d2a0ebde2c",
+  "data/interim/precedent_registry_names.parquet": "57b469eef154ce5e112f085b225e3c42a3c7580d360303c83a9f24b0683d4f86",
+  "data/interim/science.parquet": "0ba2048d06910eb3b3ce7eafd5ef7f72aef020950240c145cd00ecf12149b4a3",
+  "data/interim/science_funnel.csv": "430f2dcd487c0713fd789c7493a6a53441af0b9799c3bd720a45f9383cac7dc2",
+  "data/interim/sponsor.parquet": "e0362e4965e886e934df0dcdc3cc9c624172d735865c4201e2863b1cfb509da0",
+  "data/interim/test_features.parquet": "a1b3cc33f8c303033867e8b47f47d3c51891a428893ba3e4ed7d85a233990c4e",
+  "data/interim/text.parquet": "be441116a3f0f35d858c04f317522590d0ae2022168838d9c155ee31df2ed0e5",
+  "data/interim/trial_drugs_2020_names.parquet": "91adaa6fa582a32abbcae82475f0e84cb7cb9e2e19a9de62413bd80f8e91b496",
+  "data/interim/whathow_2020.parquet": "4e12582391968eba883ac6fe8eb89eb33250a0b60fb758f9238dbfc873e81bc8",
+  "data/interim/whathow_2020_names.parquet": "9b7b5cc426f4c3b49af2fdbd946a10fca9a9442e8237fa2b0a880a6d1e93160e",
+  "data/interim/whathow_conditions.parquet": "874ebf2495049a69ed85997b32422d09d4f6c0e2cd362b6a935cb8797a69f15b",
+  "data/interim/whathow_dates.parquet": "6c60d1b0eee30e6ac4eb95ad03d46ca85ebb95ac3fe9d663c0ba8164ea8f4f2f",
+  "data/interim/whathow_keys_2020.parquet": "3d1cf3aae994c41ec60e03f14fa6c1421e942468ec9091656e10ff6dcccee2a6",
+  "data/interim/whathow_keys_2020_names.parquet": "52b244eee91b281f5401168c4cbf0468c91bb65dfb4d7924cbd8bb04cb625f74",
+  "data/interim/whathow_keys_today.parquet": "1d40de738f3c3750836dc0d66835e36dac4d12fbf2efa08b9222cd28db6ce954",
+  "data/interim/whathow_today.parquet": "5e025f457b9c9c172ce2c1445a0eae72f821752f76c19bd9fda2dfbedc8bb5d9",
+  "data/heldout/test_labels.parquet": "d50395c5bcabe5e1be60eb644c14ae15959ddc741c68ec166d81f36b7470993a",
+  "trials.csv": "33fdc29c5b52caf647b6e63ca1aa7de7a572eadc0da157683b15f5da476c43f1"
+ },
+ "scores": {
+  "models": {
+   "logistic: registration": {
+    "auroc": {
+     "value": 0.7303069187660399,
+     "low": 0.6975435673062621,
+     "high": 0.761333386238373
+    },
+    "gap_per_100": {
+     "value": 4.6241372549062465,
+     "low": 1.9369500630638692,
+     "high": 7.34459158383168
+    },
+    "brier": 0.2126840138807249,
+    "mean_predicted": 0.5527138644584476,
+    "skipped_resamples": 0
+   },
+   "hierarchical: registration only": {
+    "auroc": {
+     "value": 0.732648090923375,
+     "low": 0.7001003544714227,
+     "high": 0.7636150664984723
+    },
+    "gap_per_100": {
+     "value": 4.714940367842379,
+     "low": 2.009062608471076,
+     "high": 7.424964990761151
+    },
+    "brier": 0.21233115599555963,
+    "mean_predicted": 0.5536218955878089,
+    "skipped_resamples": 0
+   },
+   "hierarchical: + target": {
+    "auroc": {
+     "value": 0.7517715916828157,
+     "low": 0.7195307846941198,
+     "high": 0.7824488672531608
+    },
+    "gap_per_100": {
+     "value": 4.7955166053029075,
+     "low": 2.110080106797411,
+     "high": 7.455119491061077
+    },
+    "brier": 0.20556534049812702,
+    "mean_predicted": 0.5544276579624142,
+    "skipped_resamples": 0
+   },
+   "hierarchical: + condition": {
+    "auroc": {
+     "value": 0.7463075472686325,
+     "low": 0.7155860276854579,
+     "high": 0.7758148357204194
+    },
+    "gap_per_100": {
+     "value": 3.743384805490524,
+     "low": 1.1940318023344094,
+     "high": 6.451436709268833
+    },
+    "brier": 0.20676623498687793,
+    "mean_predicted": 0.5439063399642904,
+    "skipped_resamples": 0
+   },
+   "hierarchical: + sponsor": {
+    "auroc": {
+     "value": 0.7486605038495784,
+     "low": 0.7145616348701733,
+     "high": 0.7811615670449138
+    },
+    "gap_per_100": {
+     "value": 4.757462411011659,
+     "low": 2.2271730672224823,
+     "high": 7.487464926371071
+    },
+    "brier": 0.20794882923289498,
+    "mean_predicted": 0.5540471160195017,
+    "skipped_resamples": 0
+   },
+   "hierarchical: full hierarchy": {
+    "auroc": {
+     "value": 0.7681650343057665,
+     "low": 0.7378112727549656,
+     "high": 0.796235280973496
+    },
+    "gap_per_100": {
+     "value": 3.979383753461063,
+     "low": 1.447914100801513,
+     "high": 6.580610089819418
+    },
+    "brier": 0.19898711968233931,
+    "mean_predicted": 0.5462663294439958,
+    "skipped_resamples": 0
+   },
+   "hierarchical: full + precedent + genetics": {
+    "auroc": {
+     "value": 0.7736945477400095,
+     "low": 0.7422581396984863,
+     "high": 0.8021367029005918
+    },
+    "gap_per_100": {
+     "value": 4.5423647471251165,
+     "low": 2.0152909490953554,
+     "high": 7.089882670460015
+    },
+    "brier": 0.19714682377331366,
+    "mean_predicted": 0.5518961393806363,
+    "skipped_resamples": 0
+   },
+   "hierarchical: registration only [2020 links]": {
+    "auroc": {
+     "value": 0.732648090923375,
+     "low": 0.7001003544714227,
+     "high": 0.7636150664984723
+    },
+    "gap_per_100": {
+     "value": 4.714940367842379,
+     "low": 2.009062608471076,
+     "high": 7.424964990761151
+    },
+    "brier": 0.21233115599555963,
+    "mean_predicted": 0.5536218955878089,
+    "skipped_resamples": 0
+   },
+   "hierarchical: + target [2020 links]": {
+    "auroc": {
+     "value": 0.7468496307547269,
+     "low": 0.7148785810840479,
+     "high": 0.7776601706089312
+    },
+    "gap_per_100": {
+     "value": 3.9909752124550946,
+     "low": 1.2359427228165745,
+     "high": 6.70857418489825
+    },
+    "brier": 0.20695764879200887,
+    "mean_predicted": 0.5463822440339361,
+    "skipped_resamples": 0
+   },
+   "hierarchical: + condition [2020 links]": {
+    "auroc": {
+     "value": 0.7463075472686325,
+     "low": 0.7155860276854579,
+     "high": 0.7758148357204194
+    },
+    "gap_per_100": {
+     "value": 3.743384805490524,
+     "low": 1.1940318023344094,
+     "high": 6.451436709268833
+    },
+    "brier": 0.20676623498687793,
+    "mean_predicted": 0.5439063399642904,
+    "skipped_resamples": 0
+   },
+   "hierarchical: + sponsor [2020 links]": {
+    "auroc": {
+     "value": 0.7486605038495784,
+     "low": 0.7145616348701733,
+     "high": 0.7811615670449138
+    },
+    "gap_per_100": {
+     "value": 4.757462411011659,
+     "low": 2.2271730672224823,
+     "high": 7.487464926371071
+    },
+    "brier": 0.20794882923289498,
+    "mean_predicted": 0.5540471160195017,
+    "skipped_resamples": 0
+   },
+   "hierarchical: full hierarchy [2020 links]": {
+    "auroc": {
+     "value": 0.7647685015450689,
+     "low": 0.7343422942123096,
+     "high": 0.7942697009505687
+    },
+    "gap_per_100": {
+     "value": 3.5986279512219332,
+     "low": 1.062521447562115,
+     "high": 6.264601568613696
+    },
+    "brier": 0.19994175972606462,
+    "mean_predicted": 0.5424587714216045,
+    "skipped_resamples": 0
+   },
+   "hierarchical: full + precedent + genetics [2020 links]": {
+    "auroc": {
+     "value": 0.765949562666946,
+     "low": 0.7346243597166005,
+     "high": 0.7954374809124483
+    },
+    "gap_per_100": {
+     "value": 3.564751882044692,
+     "low": 0.9919757381787858,
+     "high": 6.143578335674831
+    },
+    "brier": 0.19947066964327803,
+    "mean_predicted": 0.5421200107298321,
+    "skipped_resamples": 0
+   },
+   "logistic: registration + precedent (today's links)": {
+    "auroc": {
+     "value": 0.7412625045828314,
+     "low": 0.7093123979493671,
+     "high": 0.7713563337734456
+    },
+    "gap_per_100": {
+     "value": 4.573647247824275,
+     "low": 1.8885925729739672,
+     "high": 7.222030155762564
+    },
+    "brier": 0.20909091493162432,
+    "mean_predicted": 0.5522089643876279,
+    "skipped_resamples": 0
+   },
+   "logistic: registration + precedent (2020 links)": {
+    "auroc": {
+     "value": 0.729080029330121,
+     "low": 0.6961428445558271,
+     "high": 0.7600004946424634
+    },
+    "gap_per_100": {
+     "value": 3.80756542797428,
+     "low": 1.0834849437367151,
+     "high": 6.560553240968942
+    },
+    "brier": 0.2121579217028618,
+    "mean_predicted": 0.544548146189128,
+    "skipped_resamples": 0
+   },
+   "logistic: registration + precedent (2020 names and links)": {
+    "auroc": {
+     "value": 0.7311933692976483,
+     "low": 0.6984738004976382,
+     "high": 0.7618100340563884
+    },
+    "gap_per_100": {
+     "value": 4.089225433244459,
+     "low": 1.4524174532522132,
+     "high": 6.79013777753358
+    },
+    "brier": 0.21161147403688105,
+    "mean_predicted": 0.5473647462418297,
+    "skipped_resamples": 0
+   },
+   "logistic: registration + precedent (today's links, experimental arms only)": {
+    "auroc": {
+     "value": 0.7411420415859216,
+     "low": 0.7088314891995997,
+     "high": 0.771565339324287
+    },
+    "gap_per_100": {
+     "value": 4.767628519070954,
+     "low": 2.0666550452670127,
+     "high": 7.410467427695887
+    },
+    "brier": 0.20932424075974845,
+    "mean_predicted": 0.5541487771000947,
+    "skipped_resamples": 0
+   },
+   "logistic: registration + precedent (2020 links, experimental arms only)": {
+    "auroc": {
+     "value": 0.7295343843293354,
+     "low": 0.6964660110980836,
+     "high": 0.7606173173218382
+    },
+    "gap_per_100": {
+     "value": 4.0706928402742815,
+     "low": 1.3394457425653319,
+     "high": 6.8307980003037905
+    },
+    "brier": 0.21219897360587664,
+    "mean_predicted": 0.547179420312128,
+    "skipped_resamples": 0
+   },
+   "logistic: registration + precedent (2020 names and links, experimental arms only)": {
+    "auroc": {
+     "value": 0.7302322840831719,
+     "low": 0.6965302881578631,
+     "high": 0.7605599575529631
+    },
+    "gap_per_100": {
+     "value": 4.022178855227354,
+     "low": 1.3203901620637806,
+     "high": 6.751513315530466
+    },
+    "brier": 0.21190570686532012,
+    "mean_predicted": 0.5466942804616587,
+    "skipped_resamples": 0
+   },
+   "logistic: HOW (today's links)": {
+    "auroc": {
+     "value": 0.7174959409207563,
+     "low": 0.6851223518676273,
+     "high": 0.7467509804271039
+    },
+    "gap_per_100": {
+     "value": 5.373488266817561,
+     "low": 2.454164894762485,
+     "high": 8.242874013012402
+    },
+    "brier": 0.21798176709622055,
+    "mean_predicted": 0.5602073745775608,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT (today's links)": {
+    "auroc": {
+     "value": 0.7065927303200126,
+     "low": 0.6698484866677179,
+     "high": 0.7389339243108
+    },
+    "gap_per_100": {
+     "value": 4.674116358215441,
+     "low": 2.020213251963266,
+     "high": 7.4606824249672155
+    },
+    "brier": 0.22103946362870142,
+    "mean_predicted": 0.5532136554915396,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT + phase (today's links)": {
+    "auroc": {
+     "value": 0.7373906667365003,
+     "low": 0.7044957465599705,
+     "high": 0.7685654498547824
+    },
+    "gap_per_100": {
+     "value": 4.912758833643571,
+     "low": 2.2671692529946106,
+     "high": 7.650859582587859
+    },
+    "brier": 0.21100167342685283,
+    "mean_predicted": 0.5556000802458209,
+    "skipped_resamples": 0
+   },
+   "logistic: HOW + WHAT (today's links)": {
+    "auroc": {
+     "value": 0.7634198397318389,
+     "low": 0.7310520692456006,
+     "high": 0.7924756187324697
+    },
+    "gap_per_100": {
+     "value": 3.707875746587208,
+     "low": 1.1545047129343131,
+     "high": 6.396442012016424
+    },
+    "brier": 0.20057820013835773,
+    "mean_predicted": 0.5435512493752572,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT (today's links, own lead drug excluded)": {
+    "auroc": {
+     "value": 0.7025598386843346,
+     "low": 0.6650731161972683,
+     "high": 0.7358425800403137
+    },
+    "gap_per_100": {
+     "value": 4.899120445346961,
+     "low": 2.193558579659646,
+     "high": 7.68469862661585
+    },
+    "brier": 0.22220323036514822,
+    "mean_predicted": 0.5554636963628548,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT + phase (today's links, own lead drug excluded)": {
+    "auroc": {
+     "value": 0.7343188603152988,
+     "low": 0.7010663502403003,
+     "high": 0.7655856311951539
+    },
+    "gap_per_100": {
+     "value": 5.127970563736673,
+     "low": 2.4631274171366475,
+     "high": 7.843273416824199
+    },
+    "brier": 0.21210440469717246,
+    "mean_predicted": 0.5577521975467519,
+    "skipped_resamples": 0
+   },
+   "logistic: HOW + WHAT (today's links, own lead drug excluded)": {
+    "auroc": {
+     "value": 0.7617556172419211,
+     "low": 0.7304761844609616,
+     "high": 0.7905655001371765
+    },
+    "gap_per_100": {
+     "value": 3.7717977946976955,
+     "low": 1.1668135599800784,
+     "high": 6.466017153830917
+    },
+    "brier": 0.20123144118290384,
+    "mean_predicted": 0.5441904698563621,
+    "skipped_resamples": 0
+   },
+   "logistic: HOW (2020 links)": {
+    "auroc": {
+     "value": 0.7174959409207563,
+     "low": 0.6851223518676273,
+     "high": 0.7467509804271039
+    },
+    "gap_per_100": {
+     "value": 5.373488266817561,
+     "low": 2.454164894762485,
+     "high": 8.242874013012402
+    },
+    "brier": 0.21798176709622055,
+    "mean_predicted": 0.5602073745775608,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT (2020 links)": {
+    "auroc": {
+     "value": 0.6788495783795108,
+     "low": 0.6401643777487559,
+     "high": 0.7120810062266605
+    },
+    "gap_per_100": {
+     "value": 3.4813895054787602,
+     "low": 0.6666314893973391,
+     "high": 6.408619900162806
+    },
+    "brier": 0.22781982315718938,
+    "mean_predicted": 0.5412863869641727,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT + phase (2020 links)": {
+    "auroc": {
+     "value": 0.7217370240402242,
+     "low": 0.6883387356694758,
+     "high": 0.75503453027238
+    },
+    "gap_per_100": {
+     "value": 4.161420541152038,
+     "low": 1.4337379646322448,
+     "high": 6.973204352686405
+    },
+    "brier": 0.21541373757999877,
+    "mean_predicted": 0.5480866973209055,
+    "skipped_resamples": 0
+   },
+   "logistic: HOW + WHAT (2020 links)": {
+    "auroc": {
+     "value": 0.7523032001257005,
+     "low": 0.7204361774526699,
+     "high": 0.781139373761104
+    },
+    "gap_per_100": {
+     "value": 2.8885550918584912,
+     "low": 0.3139549455497839,
+     "high": 5.511633045413913
+    },
+    "brier": 0.20427431920564826,
+    "mean_predicted": 0.5353580428279701,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT (2020 links, own lead drug excluded)": {
+    "auroc": {
+     "value": 0.6721049599329597,
+     "low": 0.6333282528793517,
+     "high": 0.7064794233240561
+    },
+    "gap_per_100": {
+     "value": 3.70990962605936,
+     "low": 0.8505456341793127,
+     "high": 6.5775116041832025
+    },
+    "brier": 0.22945661477706067,
+    "mean_predicted": 0.5435715881699787,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT + phase (2020 links, own lead drug excluded)": {
+    "auroc": {
+     "value": 0.717709369926151,
+     "low": 0.683384001520564,
+     "high": 0.7509512093862154
+    },
+    "gap_per_100": {
+     "value": 4.386006653737063,
+     "low": 1.6472823374574164,
+     "high": 7.193710916997989
+    },
+    "brier": 0.2169588125963612,
+    "mean_predicted": 0.5503325584467558,
+    "skipped_resamples": 0
+   },
+   "logistic: HOW + WHAT (2020 links, own lead drug excluded)": {
+    "auroc": {
+     "value": 0.7492222280416907,
+     "low": 0.7175448066453695,
+     "high": 0.7777887545795552
+    },
+    "gap_per_100": {
+     "value": 2.9760156440964303,
+     "low": 0.40115205007311944,
+     "high": 5.574806206977018
+    },
+    "brier": 0.2052579656057423,
+    "mean_predicted": 0.5362326483503495,
+    "skipped_resamples": 0
+   },
+   "logistic: HOW (2020 names and links)": {
+    "auroc": {
+     "value": 0.7174959409207563,
+     "low": 0.6851223518676273,
+     "high": 0.7467509804271039
+    },
+    "gap_per_100": {
+     "value": 5.373488266817561,
+     "low": 2.454164894762485,
+     "high": 8.242874013012402
+    },
+    "brier": 0.21798176709622055,
+    "mean_predicted": 0.5602073745775608,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT (2020 names and links)": {
+    "auroc": {
+     "value": 0.6891897554077411,
+     "low": 0.6515806641327084,
+     "high": 0.7232807122876264
+    },
+    "gap_per_100": {
+     "value": 2.957557904557284,
+     "low": 0.15199805843016917,
+     "high": 5.869726364251731
+    },
+    "brier": 0.22510025243880621,
+    "mean_predicted": 0.536048070954958,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT + phase (2020 names and links)": {
+    "auroc": {
+     "value": 0.7292031110878332,
+     "low": 0.6965509851459204,
+     "high": 0.761454345758126
+    },
+    "gap_per_100": {
+     "value": 3.743749372579386,
+     "low": 1.0588990052013765,
+     "high": 6.490047203497916
+    },
+    "brier": 0.21301139078162332,
+    "mean_predicted": 0.543909985635179,
+    "skipped_resamples": 0
+   },
+   "logistic: HOW + WHAT (2020 names and links)": {
+    "auroc": {
+     "value": 0.7565940397004137,
+     "low": 0.7254887298669468,
+     "high": 0.7846841957779561
+    },
+    "gap_per_100": {
+     "value": 2.5756345655608692,
+     "low": -0.05146182570331169,
+     "high": 5.241880581678762
+    },
+    "brier": 0.20266694649148276,
+    "mean_predicted": 0.5322288375649938,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT (2020 names and links, own lead drug excluded)": {
+    "auroc": {
+     "value": 0.683078877075368,
+     "low": 0.6449884720202126,
+     "high": 0.7168355985247298
+    },
+    "gap_per_100": {
+     "value": 3.128260414796824,
+     "low": 0.3424004943149253,
+     "high": 5.99045747541099
+    },
+    "brier": 0.22637532650364803,
+    "mean_predicted": 0.5377550960573534,
+    "skipped_resamples": 0
+   },
+   "logistic: WHAT + phase (2020 names and links, own lead drug excluded)": {
+    "auroc": {
+     "value": 0.7263931807468705,
+     "low": 0.6933620498098678,
+     "high": 0.7594841698761177
+    },
+    "gap_per_100": {
+     "value": 3.9192213095462614,
+     "low": 1.1876672191121347,
+     "high": 6.717007330396029
+    },
+    "brier": 0.21414425213927457,
+    "mean_predicted": 0.5456647050048478,
+    "skipped_resamples": 0
+   },
+   "logistic: HOW + WHAT (2020 names and links, own lead drug excluded)": {
+    "auroc": {
+     "value": 0.7547726915623527,
+     "low": 0.7239714210309924,
+     "high": 0.7831891922710887
+    },
+    "gap_per_100": {
+     "value": 2.649692993939534,
+     "low": 0.012354022912181021,
+     "high": 5.321822346806102
+    },
+    "brier": 0.2033383032529875,
+    "mean_predicted": 0.5329694218487805,
+    "skipped_resamples": 0
+   }
+  },
+  "differences": {
+   "hierarchical: registration only minus logistic: registration": {
+    "better": "hierarchical: registration only",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.002341172157335092,
+     "low": -0.000283784793480249,
+     "high": 0.004980259564752077
+    },
+    "gap_per_100": {
+     "value": 0.09080311293613264,
+     "low": 0.0018323971546268972,
+     "high": 0.17349857926682352
+    }
+   },
+   "hierarchical: + target minus logistic: registration": {
+    "better": "hierarchical: + target",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.021464672916775784,
+     "low": 0.007460137781208029,
+     "high": 0.03591753668105627
+    },
+    "gap_per_100": {
+     "value": 0.17137935039666097,
+     "low": -0.5456823441636214,
+     "high": 0.8560666078876531
+    }
+   },
+   "hierarchical: + condition minus logistic: registration": {
+    "better": "hierarchical: + condition",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.01600062850259254,
+     "low": 0.0022028877919749892,
+     "high": 0.030742010972344976
+    },
+    "gap_per_100": {
+     "value": -0.8807524494157226,
+     "low": -1.4803014276918143,
+     "high": -0.30445178732291694
+    }
+   },
+   "hierarchical: + sponsor minus logistic: registration": {
+    "better": "hierarchical: + sponsor",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.01835358508353846,
+     "low": 0.006963063127141273,
+     "high": 0.03170090798250078
+    },
+    "gap_per_100": {
+     "value": 0.1333251561054123,
+     "low": -0.43167395269365455,
+     "high": 0.6336033614762002
+    }
+   },
+   "hierarchical: full hierarchy minus logistic: registration": {
+    "better": "hierarchical: full hierarchy",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.03785811553972662,
+     "low": 0.018412575375497613,
+     "high": 0.0571616569886479
+    },
+    "gap_per_100": {
+     "value": -0.6447535014451833,
+     "low": -1.5218511606509615,
+     "high": 0.1834402080893649
+    }
+   },
+   "hierarchical: full + precedent + genetics minus logistic: registration": {
+    "better": "hierarchical: full + precedent + genetics",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.04338762897396953,
+     "low": 0.02330059417337648,
+     "high": 0.06409284579634786
+    },
+    "gap_per_100": {
+     "value": -0.08177250778112999,
+     "low": -1.039732780969264,
+     "high": 0.8069176038050506
+    }
+   },
+   "hierarchical: registration only [2020 links] minus logistic: registration": {
+    "better": "hierarchical: registration only [2020 links]",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.002341172157335092,
+     "low": -0.000283784793480249,
+     "high": 0.004980259564752077
+    },
+    "gap_per_100": {
+     "value": 0.09080311293613264,
+     "low": 0.0018323971546268972,
+     "high": 0.17349857926682352
+    }
+   },
+   "hierarchical: + target [2020 links] minus logistic: registration": {
+    "better": "hierarchical: + target [2020 links]",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.016542711988686953,
+     "low": 0.00504663309623247,
+     "high": 0.028364807131939552
+    },
+    "gap_per_100": {
+     "value": -0.6331620424511519,
+     "low": -1.2525774956843843,
+     "high": -0.0319920767216091
+    }
+   },
+   "hierarchical: + condition [2020 links] minus logistic: registration": {
+    "better": "hierarchical: + condition [2020 links]",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.01600062850259254,
+     "low": 0.0022028877919749892,
+     "high": 0.030742010972344976
+    },
+    "gap_per_100": {
+     "value": -0.8807524494157226,
+     "low": -1.4803014276918143,
+     "high": -0.30445178732291694
+    }
+   },
+   "hierarchical: + sponsor [2020 links] minus logistic: registration": {
+    "better": "hierarchical: + sponsor [2020 links]",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.01835358508353846,
+     "low": 0.006963063127141273,
+     "high": 0.03170090798250078
+    },
+    "gap_per_100": {
+     "value": 0.1333251561054123,
+     "low": -0.43167395269365455,
+     "high": 0.6336033614762002
+    }
+   },
+   "hierarchical: full hierarchy [2020 links] minus logistic: registration": {
+    "better": "hierarchical: full hierarchy [2020 links]",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.034461582779029,
+     "low": 0.01557638476694056,
+     "high": 0.05289050951783953
+    },
+    "gap_per_100": {
+     "value": -1.0255093036843133,
+     "low": -1.8714177249201263,
+     "high": -0.26895141326844885
+    }
+   },
+   "hierarchical: full + precedent + genetics [2020 links] minus logistic: registration": {
+    "better": "hierarchical: full + precedent + genetics [2020 links]",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.0356426439009061,
+     "low": 0.017231901947002328,
+     "high": 0.05532461618750056
+    },
+    "gap_per_100": {
+     "value": -1.0593853728615543,
+     "low": -1.9500701715437088,
+     "high": -0.2643633290184483
+    }
+   },
+   "logistic: registration + precedent (today's links) minus logistic: registration": {
+    "better": "logistic: registration + precedent (today's links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.010955585816791458,
+     "low": 0.00043351682156973775,
+     "high": 0.022649243561387238
+    },
+    "gap_per_100": {
+     "value": -0.05049000708197138,
+     "low": -0.5141815031645589,
+     "high": 0.38731276563115735
+    }
+   },
+   "logistic: registration + precedent (2020 links) minus logistic: registration": {
+    "better": "logistic: registration + precedent (2020 links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.0012268894359189764,
+     "low": -0.010183155992886186,
+     "high": 0.00852193641827594
+    },
+    "gap_per_100": {
+     "value": -0.8165718269319666,
+     "low": -1.174601662872514,
+     "high": -0.4213090792432869
+    }
+   },
+   "logistic: registration + precedent (2020 names and links) minus logistic: registration": {
+    "better": "logistic: registration + precedent (2020 names and links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.000886450531608407,
+     "low": -0.007435468480203594,
+     "high": 0.009692139154520277
+    },
+    "gap_per_100": {
+     "value": -0.5349118216617876,
+     "low": -0.8952540818319967,
+     "high": -0.17195881745287547
+    }
+   },
+   "logistic: registration + precedent (today's links, experimental arms only) minus logistic: registration": {
+    "better": "logistic: registration + precedent (today's links, experimental arms only)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.010835122819881637,
+     "low": 0.0016139936434969749,
+     "high": 0.020585171142506884
+    },
+    "gap_per_100": {
+     "value": 0.14349126416470792,
+     "low": -0.2521046359864212,
+     "high": 0.5305733673186424
+    }
+   },
+   "logistic: registration + precedent (2020 links, experimental arms only) minus logistic: registration": {
+    "better": "logistic: registration + precedent (2020 links, experimental arms only)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.0007725344367045528,
+     "low": -0.008762329772407209,
+     "high": 0.007867486378021428
+    },
+    "gap_per_100": {
+     "value": -0.553444414631965,
+     "low": -0.8742191722667962,
+     "high": -0.21414140760187514
+    }
+   },
+   "logistic: registration + precedent (2020 names and links, experimental arms only) minus logistic: registration": {
+    "better": "logistic: registration + precedent (2020 names and links, experimental arms only)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -7.463468286805774e-05,
+     "low": -0.008038903338030517,
+     "high": 0.0088673570762952
+    },
+    "gap_per_100": {
+     "value": -0.6019583996788924,
+     "low": -0.9499729311281313,
+     "high": -0.23230564974473036
+    }
+   },
+   "logistic: HOW (today's links) minus logistic: registration": {
+    "better": "logistic: HOW (today's links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.012810977845283622,
+     "low": -0.025318516710817113,
+     "high": -0.0004469488819601949
+    },
+    "gap_per_100": {
+     "value": 0.7493510119113145,
+     "low": 0.12147398971973701,
+     "high": 1.3147263637097693
+    }
+   },
+   "logistic: WHAT (today's links) minus logistic: registration": {
+    "better": "logistic: WHAT (today's links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.02371418844602735,
+     "low": -0.05785805446694503,
+     "high": 0.00954099660358747
+    },
+    "gap_per_100": {
+     "value": 0.04997910330919453,
+     "low": -1.2099280624014177,
+     "high": 1.3491220668678978
+    }
+   },
+   "logistic: WHAT + phase (today's links) minus logistic: registration": {
+    "better": "logistic: WHAT + phase (today's links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.007083747970460408,
+     "low": -0.018878531986252493,
+     "high": 0.03422911422599994
+    },
+    "gap_per_100": {
+     "value": 0.28862157873732475,
+     "low": -0.7113359569296914,
+     "high": 1.351433844061391
+    }
+   },
+   "logistic: HOW + WHAT (today's links) minus logistic: registration": {
+    "better": "logistic: HOW + WHAT (today's links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.033112920965798986,
+     "low": 0.01740141621082301,
+     "high": 0.048588529935850694
+    },
+    "gap_per_100": {
+     "value": -0.9162615083190384,
+     "low": -1.6175623803335302,
+     "high": -0.203624861052056
+    }
+   },
+   "logistic: WHAT (today's links, own lead drug excluded) minus logistic: registration": {
+    "better": "logistic: WHAT (today's links, own lead drug excluded)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.027747080081705344,
+     "low": -0.06146831520518341,
+     "high": 0.007125890754897089
+    },
+    "gap_per_100": {
+     "value": 0.2749831904407145,
+     "low": -0.9615639448003915,
+     "high": 1.5150864116068818
+    }
+   },
+   "logistic: WHAT + phase (today's links, own lead drug excluded) minus logistic: registration": {
+    "better": "logistic: WHAT + phase (today's links, own lead drug excluded)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.0040119415492588795,
+     "low": -0.02234261928191456,
+     "high": 0.03079983269196129
+    },
+    "gap_per_100": {
+     "value": 0.5038333088304263,
+     "low": -0.48791340233347275,
+     "high": 1.5532865716332138
+    }
+   },
+   "logistic: HOW + WHAT (today's links, own lead drug excluded) minus logistic: registration": {
+    "better": "logistic: HOW + WHAT (today's links, own lead drug excluded)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.031448698475881165,
+     "low": 0.015413121172898605,
+     "high": 0.04690701148973867
+    },
+    "gap_per_100": {
+     "value": -0.852339460208551,
+     "low": -1.5567908784529931,
+     "high": -0.13134457722775486
+    }
+   },
+   "logistic: HOW (2020 links) minus logistic: registration": {
+    "better": "logistic: HOW (2020 links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.012810977845283622,
+     "low": -0.025318516710817113,
+     "high": -0.0004469488819601949
+    },
+    "gap_per_100": {
+     "value": 0.7493510119113145,
+     "low": 0.12147398971973701,
+     "high": 1.3147263637097693
+    }
+   },
+   "logistic: WHAT (2020 links) minus logistic: registration": {
+    "better": "logistic: WHAT (2020 links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.05145734038652916,
+     "low": -0.0844710188511127,
+     "high": -0.016827856489906853
+    },
+    "gap_per_100": {
+     "value": -1.1427477494274862,
+     "low": -2.361127542294415,
+     "high": 0.08891973165913052
+    }
+   },
+   "logistic: WHAT + phase (2020 links) minus logistic: registration": {
+    "better": "logistic: WHAT + phase (2020 links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.008569894725815708,
+     "low": -0.033502246816517596,
+     "high": 0.016386572019578424
+    },
+    "gap_per_100": {
+     "value": -0.4627167137542081,
+     "low": -1.3809485900109941,
+     "high": 0.5186449777207223
+    }
+   },
+   "logistic: HOW + WHAT (2020 links) minus logistic: registration": {
+    "better": "logistic: HOW + WHAT (2020 links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.021996281359660586,
+     "low": 0.008575984393308703,
+     "high": 0.03622487455408547
+    },
+    "gap_per_100": {
+     "value": -1.7355821630477553,
+     "low": -2.3346998050614336,
+     "high": -1.092918772786478
+    }
+   },
+   "logistic: WHAT (2020 links, own lead drug excluded) minus logistic: registration": {
+    "better": "logistic: WHAT (2020 links, own lead drug excluded)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.058201958833080214,
+     "low": -0.0924334096549724,
+     "high": -0.022389589252319677
+    },
+    "gap_per_100": {
+     "value": -0.9142276288468865,
+     "low": -2.1142355292317765,
+     "high": 0.3084842218464106
+    }
+   },
+   "logistic: WHAT + phase (2020 links, own lead drug excluded) minus logistic: registration": {
+    "better": "logistic: WHAT + phase (2020 links, own lead drug excluded)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.01259754883988895,
+     "low": -0.03797502980577914,
+     "high": 0.013859922615111856
+    },
+    "gap_per_100": {
+     "value": -0.23813060116918372,
+     "low": -1.1796510781186766,
+     "high": 0.7208718671024389
+    }
+   },
+   "logistic: HOW + WHAT (2020 links, own lead drug excluded) minus logistic: registration": {
+    "better": "logistic: HOW + WHAT (2020 links, own lead drug excluded)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.01891530927565077,
+     "low": 0.005541330123852656,
+     "high": 0.03321962301006426
+    },
+    "gap_per_100": {
+     "value": -1.6481216108098162,
+     "low": -2.272193136248824,
+     "high": -1.0109000472342025
+    }
+   },
+   "logistic: HOW (2020 names and links) minus logistic: registration": {
+    "better": "logistic: HOW (2020 names and links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.012810977845283622,
+     "low": -0.025318516710817113,
+     "high": -0.0004469488819601949
+    },
+    "gap_per_100": {
+     "value": 0.7493510119113145,
+     "low": 0.12147398971973701,
+     "high": 1.3147263637097693
+    }
+   },
+   "logistic: WHAT (2020 names and links) minus logistic: registration": {
+    "better": "logistic: WHAT (2020 names and links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.04111716335829885,
+     "low": -0.0752763589978749,
+     "high": -0.005600169607439099
+    },
+    "gap_per_100": {
+     "value": -1.6665793503489623,
+     "low": -2.875099674418758,
+     "high": -0.47968279453775575
+    }
+   },
+   "logistic: WHAT + phase (2020 names and links) minus logistic: registration": {
+    "better": "logistic: WHAT + phase (2020 names and links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.0011038076782067252,
+     "low": -0.025379202381191342,
+     "high": 0.02459911344161426
+    },
+    "gap_per_100": {
+     "value": -0.8803878823268607,
+     "low": -1.8050154722313507,
+     "high": 0.0943284527019114
+    }
+   },
+   "logistic: HOW + WHAT (2020 names and links) minus logistic: registration": {
+    "better": "logistic: HOW + WHAT (2020 names and links)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.026287120934373798,
+     "low": 0.012690134282925675,
+     "high": 0.04092979441420543
+    },
+    "gap_per_100": {
+     "value": -2.0485026893453773,
+     "low": -2.6676399190332702,
+     "high": -1.378965388532878
+    }
+   },
+   "logistic: WHAT (2020 names and links, own lead drug excluded) minus logistic: registration": {
+    "better": "logistic: WHAT (2020 names and links, own lead drug excluded)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.04722804169067196,
+     "low": -0.08145253363632181,
+     "high": -0.010972925850653936
+    },
+    "gap_per_100": {
+     "value": -1.4958768401094225,
+     "low": -2.7008486949399333,
+     "high": -0.26963880121044403
+    }
+   },
+   "logistic: WHAT + phase (2020 names and links, own lead drug excluded) minus logistic: registration": {
+    "better": "logistic: WHAT + phase (2020 names and links, own lead drug excluded)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": -0.003913738019169388,
+     "low": -0.0291425545710335,
+     "high": 0.022822186642897323
+    },
+    "gap_per_100": {
+     "value": -0.7049159453599851,
+     "low": -1.5951150775908434,
+     "high": 0.2587755253309333
+    }
+   },
+   "logistic: HOW + WHAT (2020 names and links, own lead drug excluded) minus logistic: registration": {
+    "better": "logistic: HOW + WHAT (2020 names and links, own lead drug excluded)",
+    "baseline": "logistic: registration",
+    "auroc": {
+     "value": 0.02446577279631279,
+     "low": 0.010250010934035825,
+     "high": 0.03945862856260934
+    },
+    "gap_per_100": {
+     "value": -1.9744442609667123,
+     "low": -2.5712697382848746,
+     "high": -1.286892464383061
+    }
+   },
+   "logistic: WHAT (today's links) minus logistic: HOW (today's links)": {
+    "better": "logistic: WHAT (today's links)",
+    "baseline": "logistic: HOW (today's links)",
+    "auroc": {
+     "value": -0.010903210600743729,
+     "low": -0.04930046832401253,
+     "high": 0.02750190994437693
+    },
+    "gap_per_100": {
+     "value": -0.69937190860212,
+     "low": -2.177597679331722,
+     "high": 0.771207564878873
+    }
+   },
+   "logistic: WHAT + phase (today's links) minus logistic: HOW (today's links)": {
+    "better": "logistic: WHAT + phase (today's links)",
+    "baseline": "logistic: HOW (today's links)",
+    "auroc": {
+     "value": 0.01989472581574403,
+     "low": -0.009872940422845922,
+     "high": 0.048305407916459576
+    },
+    "gap_per_100": {
+     "value": -0.46072943317398973,
+     "low": -1.7342086697715553,
+     "high": 0.8551124334429454
+    }
+   },
+   "logistic: HOW + WHAT (today's links) minus logistic: HOW (today's links)": {
+    "better": "logistic: HOW + WHAT (today's links)",
+    "baseline": "logistic: HOW (today's links)",
+    "auroc": {
+     "value": 0.04592389881108261,
+     "low": 0.027350285831372702,
+     "high": 0.06455383354151227
+    },
+    "gap_per_100": {
+     "value": -1.6656125202303529,
+     "low": -2.690897939843893,
+     "high": -0.605781614831702
+    }
+   },
+   "logistic: WHAT (today's links, own lead drug excluded) minus logistic: HOW (today's links)": {
+    "better": "logistic: WHAT (today's links, own lead drug excluded)",
+    "baseline": "logistic: HOW (today's links)",
+    "auroc": {
+     "value": -0.014936102236421722,
+     "low": -0.05338544055771479,
+     "high": 0.023502778207656005
+    },
+    "gap_per_100": {
+     "value": -0.47436782147059997,
+     "low": -1.9733938693559898,
+     "high": 0.9508476199671706
+    }
+   },
+   "logistic: WHAT + phase (today's links, own lead drug excluded) minus logistic: HOW (today's links)": {
+    "better": "logistic: WHAT + phase (today's links, own lead drug excluded)",
+    "baseline": "logistic: HOW (today's links)",
+    "auroc": {
+     "value": 0.0168229193945425,
+     "low": -0.013316881242633754,
+     "high": 0.044976178227238824
+    },
+    "gap_per_100": {
+     "value": -0.24551770308088816,
+     "low": -1.494923601902257,
+     "high": 1.0214930972002083
+    }
+   },
+   "logistic: HOW + WHAT (today's links, own lead drug excluded) minus logistic: HOW (today's links)": {
+    "better": "logistic: HOW + WHAT (today's links, own lead drug excluded)",
+    "baseline": "logistic: HOW (today's links)",
+    "auroc": {
+     "value": 0.04425967632116479,
+     "low": 0.02552687498385354,
+     "high": 0.06284817548424532
+    },
+    "gap_per_100": {
+     "value": -1.6016904721198655,
+     "low": -2.5924570706387144,
+     "high": -0.5730616997462894
+    }
+   },
+   "logistic: WHAT (2020 links) minus logistic: HOW (2020 links)": {
+    "better": "logistic: WHAT (2020 links)",
+    "baseline": "logistic: HOW (2020 links)",
+    "auroc": {
+     "value": -0.03864636254124554,
+     "low": -0.07827660341353694,
+     "high": -0.0007606612613027166
+    },
+    "gap_per_100": {
+     "value": -1.8920987613388007,
+     "low": -3.3279936294021484,
+     "high": -0.42504153239793707
+    }
+   },
+   "logistic: WHAT + phase (2020 links) minus logistic: HOW (2020 links)": {
+    "better": "logistic: WHAT + phase (2020 links)",
+    "baseline": "logistic: HOW (2020 links)",
+    "auroc": {
+     "value": 0.004241083119467914,
+     "low": -0.026082562870017867,
+     "high": 0.03481308936489327
+    },
+    "gap_per_100": {
+     "value": -1.2120677256655226,
+     "low": -2.385940957062041,
+     "high": 0.05049410408496138
+    }
+   },
+   "logistic: HOW + WHAT (2020 links) minus logistic: HOW (2020 links)": {
+    "better": "logistic: HOW + WHAT (2020 links)",
+    "baseline": "logistic: HOW (2020 links)",
+    "auroc": {
+     "value": 0.03480725920494421,
+     "low": 0.017061338118686667,
+     "high": 0.05327424730525275
+    },
+    "gap_per_100": {
+     "value": -2.4849331749590697,
+     "low": -3.425343493260524,
+     "high": -1.4666987232408637
+    }
+   },
+   "logistic: WHAT (2020 links, own lead drug excluded) minus logistic: HOW (2020 links)": {
+    "better": "logistic: WHAT (2020 links, own lead drug excluded)",
+    "baseline": "logistic: HOW (2020 links)",
+    "auroc": {
+     "value": -0.04539098098779659,
+     "low": -0.08424063930656756,
+     "high": -0.00636368451438704
+    },
+    "gap_per_100": {
+     "value": -1.663578640758201,
+     "low": -3.0719228154485214,
+     "high": -0.22630519254588902
+    }
+   },
+   "logistic: WHAT + phase (2020 links, own lead drug excluded) minus logistic: HOW (2020 links)": {
+    "better": "logistic: WHAT + phase (2020 links, own lead drug excluded)",
+    "baseline": "logistic: HOW (2020 links)",
+    "auroc": {
+     "value": 0.0002134290053946719,
+     "low": -0.03101414169787329,
+     "high": 0.0309491782317087
+    },
+    "gap_per_100": {
+     "value": -0.9874816130804982,
+     "low": -2.137601319566985,
+     "high": 0.27084968631675627
+    }
+   },
+   "logistic: HOW + WHAT (2020 links, own lead drug excluded) minus logistic: HOW (2020 links)": {
+    "better": "logistic: HOW + WHAT (2020 links, own lead drug excluded)",
+    "baseline": "logistic: HOW (2020 links)",
+    "auroc": {
+     "value": 0.03172628712093439,
+     "low": 0.013689799459628393,
+     "high": 0.050749285568515594
+    },
+    "gap_per_100": {
+     "value": -2.3974726227211307,
+     "low": -3.3399543769862094,
+     "high": -1.3685324164171713
+    }
+   },
+   "logistic: WHAT (2020 names and links) minus logistic: HOW (2020 names and links)": {
+    "better": "logistic: WHAT (2020 names and links)",
+    "baseline": "logistic: HOW (2020 names and links)",
+    "auroc": {
+     "value": -0.028306185513015225,
+     "low": -0.06777735324488741,
+     "high": 0.011673082049641076
+    },
+    "gap_per_100": {
+     "value": -2.415930362260277,
+     "low": -3.937177803977928,
+     "high": -0.9501754360861625
+    }
+   },
+   "logistic: WHAT + phase (2020 names and links) minus logistic: HOW (2020 names and links)": {
+    "better": "logistic: WHAT + phase (2020 names and links)",
+    "baseline": "logistic: HOW (2020 names and links)",
+    "auroc": {
+     "value": 0.011707170167076897,
+     "low": -0.017730490884460524,
+     "high": 0.04001937573653517
+    },
+    "gap_per_100": {
+     "value": -1.6297388942381752,
+     "low": -2.85934355932862,
+     "high": -0.36465679450009975
+    }
+   },
+   "logistic: HOW + WHAT (2020 names and links) minus logistic: HOW (2020 names and links)": {
+    "better": "logistic: HOW + WHAT (2020 names and links)",
+    "baseline": "logistic: HOW (2020 names and links)",
+    "auroc": {
+     "value": 0.03909809877965742,
+     "low": 0.02124709607921647,
+     "high": 0.05794466995132066
+    },
+    "gap_per_100": {
+     "value": -2.7978537012566917,
+     "low": -3.7572940086420563,
+     "high": -1.774352499426769
+    }
+   },
+   "logistic: WHAT (2020 names and links, own lead drug excluded) minus logistic: HOW (2020 names and links)": {
+    "better": "logistic: WHAT (2020 names and links, own lead drug excluded)",
+    "baseline": "logistic: HOW (2020 names and links)",
+    "auroc": {
+     "value": -0.03441706384538834,
+     "low": -0.07412598025824578,
+     "high": 0.006547518921142715
+    },
+    "gap_per_100": {
+     "value": -2.245227852020737,
+     "low": -3.707682684890766,
+     "high": -0.7977803940639023
+    }
+   },
+   "logistic: WHAT + phase (2020 names and links, own lead drug excluded) minus logistic: HOW (2020 names and links)": {
+    "better": "logistic: WHAT + phase (2020 names and links, own lead drug excluded)",
+    "baseline": "logistic: HOW (2020 names and links)",
+    "auroc": {
+     "value": 0.008897239826114234,
+     "low": -0.021757352321928956,
+     "high": 0.03727384108948762
+    },
+    "gap_per_100": {
+     "value": -1.4542669572712996,
+     "low": -2.67467513644712,
+     "high": -0.20887811429419192
+    }
+   },
+   "logistic: HOW + WHAT (2020 names and links, own lead drug excluded) minus logistic: HOW (2020 names and links)": {
+    "better": "logistic: HOW + WHAT (2020 names and links, own lead drug excluded)",
+    "baseline": "logistic: HOW (2020 names and links)",
+    "auroc": {
+     "value": 0.03727675064159641,
+     "low": 0.019134096763914213,
+     "high": 0.05612315304770978
+    },
+    "gap_per_100": {
+     "value": -2.723795272878027,
+     "low": -3.6571730990526086,
+     "high": -1.6956319772332076
+    }
+   }
+  }
+ },
+ "items": {
+  "1": {
+   "failed": "",
+   "headline": {
+    "comparison": "hierarchical: full hierarchy minus logistic: registration, AUROC",
+    "value": 0.03785811553972662,
+    "low": 0.018412575375497613,
+    "high": 0.0571616569886479,
+    "rule": "met",
+    "range": "no range stated in the plan"
+   },
+   "models": [
+    "hierarchical: registration only",
+    "hierarchical: + target",
+    "hierarchical: + condition",
+    "hierarchical: + sponsor",
+    "hierarchical: full hierarchy",
+    "hierarchical: full + precedent + genetics",
+    "hierarchical: registration only [2020 links]",
+    "hierarchical: + target [2020 links]",
+    "hierarchical: + condition [2020 links]",
+    "hierarchical: + sponsor [2020 links]",
+    "hierarchical: full hierarchy [2020 links]",
+    "hierarchical: full + precedent + genetics [2020 links]"
+   ]
+  },
+  "2": {
+   "failed": "",
+   "headline": {
+    "comparison": "logistic: registration + precedent (2020 names and links, experimental arms only) minus logistic: registration, AUROC",
+    "value": -7.463468286805774e-05,
+    "low": -0.008038903338030517,
+    "high": 0.0088673570762952,
+    "rule": "not met",
+    "range": "outside, but the interval overlaps the range"
+   },
+   "models": [
+    "logistic: registration + precedent (today's links)",
+    "logistic: registration + precedent (2020 links)",
+    "logistic: registration + precedent (2020 names and links)",
+    "logistic: registration + precedent (today's links, experimental arms only)",
+    "logistic: registration + precedent (2020 links, experimental arms only)",
+    "logistic: registration + precedent (2020 names and links, experimental arms only)"
+   ]
+  },
+  "3": {
+   "failed": "",
+   "headline": {
+    "comparison": "logistic: HOW + WHAT (2020 names and links) minus logistic: HOW (2020 names and links), AUROC",
+    "value": 0.03909809877965742,
+    "low": 0.02124709607921647,
+    "high": 0.05794466995132066,
+    "rule": "met",
+    "range": "outside, but the interval overlaps the range"
+   },
+   "what_alone": {
+    "value": 0.6891897554077411,
+    "low": 0.6515806641327084,
+    "high": 0.7232807122876264,
+    "range": "no range stated in the plan"
+   },
+   "models": [
+    "logistic: HOW (today's links)",
+    "logistic: WHAT (today's links)",
+    "logistic: WHAT + phase (today's links)",
+    "logistic: HOW + WHAT (today's links)",
+    "logistic: WHAT (today's links, own lead drug excluded)",
+    "logistic: WHAT + phase (today's links, own lead drug excluded)",
+    "logistic: HOW + WHAT (today's links, own lead drug excluded)",
+    "logistic: HOW (2020 links)",
+    "logistic: WHAT (2020 links)",
+    "logistic: WHAT + phase (2020 links)",
+    "logistic: HOW + WHAT (2020 links)",
+    "logistic: WHAT (2020 links, own lead drug excluded)",
+    "logistic: WHAT + phase (2020 links, own lead drug excluded)",
+    "logistic: HOW + WHAT (2020 links, own lead drug excluded)",
+    "logistic: HOW (2020 names and links)",
+    "logistic: WHAT (2020 names and links)",
+    "logistic: WHAT + phase (2020 names and links)",
+    "logistic: HOW + WHAT (2020 names and links)",
+    "logistic: WHAT (2020 names and links, own lead drug excluded)",
+    "logistic: WHAT + phase (2020 names and links, own lead drug excluded)",
+    "logistic: HOW + WHAT (2020 names and links, own lead drug excluded)"
+   ]
+  },
+  "4": {
+   "failed": "",
+   "headline": {
+    "comparison": "Phase 2: top third minus bottom third of logistic: WHAT (2020 names and links), per 100",
+    "value": 27.845064315652543,
+    "low": 17.957944166560637,
+    "high": 38.994722814498935,
+    "rule": "met",
+    "range": "outside, but the interval overlaps the range"
+   },
+   "by_model": {
+    "logistic: WHAT (today's links)": {
+     "by_third": {
+      "phase2": {
+       "thirds": [
+        {
+         "per_100": 23.655913978494624,
+         "low": 16.949152542372882,
+         "high": 30.001231527093594,
+         "n": 186
+        },
+        {
+         "per_100": 32.795698924731184,
+         "low": 25.801915322580644,
+         "high": 40.109712857475,
+         "n": 186
+        },
+        {
+         "per_100": 52.43243243243243,
+         "low": 44.226036269430054,
+         "high": 60.82528773250422,
+         "n": 185
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 28.776518453937804,
+        "low": 17.670484257804464,
+        "high": 39.39826839826839
+       }
+      },
+      "phase3": {
+       "thirds": [
+        {
+         "per_100": 40.80717488789238,
+         "low": 34.524614934685125,
+         "high": 47.161572052401745,
+         "n": 223
+        },
+        {
+         "per_100": 64.5021645021645,
+         "low": 57.81070214435147,
+         "high": 70.70795289135901,
+         "n": 231
+        },
+        {
+         "per_100": 81.77777777777779,
+         "low": 75.82392026578073,
+         "high": 86.85464173456926,
+         "n": 225
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 40.970602889885406,
+        "low": 32.130626114082006,
+        "high": 48.881454443331144
+       }
+      }
+     },
+     "survival": {
+      "top_minus_bottom": 41.74757281553398,
+      "within_strata": 32.88667740500139,
+      "share": 0.7877506448174753,
+      "n_strata": 12,
+      "n_strata_total": 16,
+      "share_interval": [
+       0.6829581946046231,
+       0.870934473155946
+      ],
+      "within_strata_interval": [
+       25.135931524854932,
+       40.07520444053022
+      ]
+     }
+    },
+    "logistic: WHAT (today's links, own lead drug excluded)": {
+     "by_third": {
+      "phase2": {
+       "thirds": [
+        {
+         "per_100": 24.193548387096776,
+         "low": 17.581686930091188,
+         "high": 30.55591537132988,
+         "n": 186
+        },
+        {
+         "per_100": 31.550802139037433,
+         "low": 24.59565934691091,
+         "high": 38.77581941867656,
+         "n": 187
+        },
+        {
+         "per_100": 53.2608695652174,
+         "low": 45.0,
+         "high": 61.70243161094225,
+         "n": 184
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 29.067321178120622,
+        "low": 18.097669916806954,
+        "high": 39.73265203706004
+       }
+      },
+      "phase3": {
+       "thirds": [
+        {
+         "per_100": 42.290748898678416,
+         "low": 35.74141636970417,
+         "high": 49.09151246983106,
+         "n": 227
+        },
+        {
+         "per_100": 63.716814159292035,
+         "low": 56.594785490059294,
+         "high": 70.40425044601957,
+         "n": 226
+        },
+        {
+         "per_100": 81.41592920353983,
+         "low": 75.62116745283019,
+         "high": 86.44182317911131,
+         "n": 226
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 39.125180304861416,
+        "low": 30.200968832685447,
+        "high": 47.20142381856353
+       }
+      }
+     },
+     "survival": {
+      "top_minus_bottom": 40.29126213592233,
+      "within_strata": 32.22646044960326,
+      "share": 0.7998374521226832,
+      "n_strata": 12,
+      "n_strata_total": 16,
+      "share_interval": [
+       0.6991648089186071,
+       0.882583340850829
+      ],
+      "within_strata_interval": [
+       24.312188533382805,
+       39.072421780816605
+      ]
+     }
+    },
+    "logistic: WHAT (2020 links)": {
+     "by_third": {
+      "phase2": {
+       "thirds": [
+        {
+         "per_100": 24.598930481283425,
+         "low": 17.714285714285715,
+         "high": 31.07404919388177,
+         "n": 187
+        },
+        {
+         "per_100": 32.972972972972975,
+         "low": 25.772578554231742,
+         "high": 40.20141468210618,
+         "n": 185
+        },
+        {
+         "per_100": 51.35135135135135,
+         "low": 42.9409454881429,
+         "high": 59.695783485808114,
+         "n": 185
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 26.752420870067922,
+        "low": 16.95476224601812,
+        "high": 37.75882777502261
+       }
+      },
+      "phase3": {
+       "thirds": [
+        {
+         "per_100": 44.052863436123346,
+         "low": 37.2093023255814,
+         "high": 50.847457627118644,
+         "n": 227
+        },
+        {
+         "per_100": 64.15929203539822,
+         "low": 57.64026730183935,
+         "high": 70.14443954590543,
+         "n": 226
+        },
+        {
+         "per_100": 79.20353982300885,
+         "low": 72.84398339424757,
+         "high": 84.61627906976744,
+         "n": 226
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 35.15067638688551,
+        "low": 25.915098171344457,
+        "high": 43.877501477573965
+       }
+      }
+     },
+     "survival": {
+      "top_minus_bottom": 35.92233009708738,
+      "within_strata": 27.054887870363892,
+      "share": 0.7531495812560759,
+      "n_strata": 12,
+      "n_strata_total": 16,
+      "share_interval": [
+       0.6401669624897733,
+       0.8476402086459716
+      ],
+      "within_strata_interval": [
+       19.747073367405402,
+       34.24550355030916
+      ]
+     }
+    },
+    "logistic: WHAT (2020 links, own lead drug excluded)": {
+     "by_third": {
+      "phase2": {
+       "thirds": [
+        {
+         "per_100": 25.13368983957219,
+         "low": 18.333333333333332,
+         "high": 31.63418646146983,
+         "n": 187
+        },
+        {
+         "per_100": 32.608695652173914,
+         "low": 25.603302999662958,
+         "high": 39.67412870945479,
+         "n": 184
+        },
+        {
+         "per_100": 51.075268817204304,
+         "low": 42.702386597123436,
+         "high": 59.551159454936645,
+         "n": 186
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 25.941578977632112,
+        "low": 15.814239518848456,
+        "high": 37.19199829923782
+       }
+      },
+      "phase3": {
+       "thirds": [
+        {
+         "per_100": 45.37444933920705,
+         "low": 38.61280056577087,
+         "high": 52.195497344278124,
+         "n": 227
+        },
+        {
+         "per_100": 62.83185840707964,
+         "low": 56.36147186147186,
+         "high": 69.26580086580087,
+         "n": 226
+        },
+        {
+         "per_100": 79.20353982300885,
+         "low": 72.72541743970316,
+         "high": 84.34922217790186,
+         "n": 226
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 33.82909048380181,
+        "low": 24.662152467448003,
+        "high": 42.71457105696236
+       }
+      }
+     },
+     "survival": {
+      "top_minus_bottom": 35.19417475728155,
+      "within_strata": 25.859079062107703,
+      "share": 0.7347545223164396,
+      "n_strata": 13,
+      "n_strata_total": 16,
+      "share_interval": [
+       0.6196412508460223,
+       0.833016979411371
+      ],
+      "within_strata_interval": [
+       18.665132909736247,
+       33.112226164410444
+      ]
+     }
+    },
+    "logistic: WHAT (2020 names and links)": {
+     "by_third": {
+      "phase2": {
+       "thirds": [
+        {
+         "per_100": 25.668449197860966,
+         "low": 18.71897346257747,
+         "high": 32.237799359509886,
+         "n": 187
+        },
+        {
+         "per_100": 29.72972972972973,
+         "low": 22.74940014765596,
+         "high": 36.614800407520605,
+         "n": 185
+        },
+        {
+         "per_100": 53.51351351351351,
+         "low": 45.55555555555556,
+         "high": 61.50096153846154,
+         "n": 185
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 27.845064315652543,
+        "low": 17.957944166560637,
+        "high": 38.994722814498935
+       }
+      },
+      "phase3": {
+       "thirds": [
+        {
+         "per_100": 42.0353982300885,
+         "low": 35.63698006517155,
+         "high": 48.827856025039125,
+         "n": 226
+        },
+        {
+         "per_100": 66.51982378854625,
+         "low": 60.077075098814234,
+         "high": 72.24674873005502,
+         "n": 227
+        },
+        {
+         "per_100": 78.76106194690266,
+         "low": 71.96219393580581,
+         "high": 84.23460548460548,
+         "n": 226
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 36.72566371681416,
+        "low": 26.83442020851237,
+        "high": 45.3837985115453
+       }
+      }
+     },
+     "survival": {
+      "top_minus_bottom": 37.62135922330097,
+      "within_strata": 29.346614119572372,
+      "share": 0.7800519365976657,
+      "n_strata": 13,
+      "n_strata_total": 16,
+      "share_interval": [
+       0.6758023059316701,
+       0.8727185085274514
+      ],
+      "within_strata_interval": [
+       22.186123042106765,
+       36.501044004891845
+      ]
+     }
+    },
+    "logistic: WHAT (2020 names and links, own lead drug excluded)": {
+     "by_third": {
+      "phase2": {
+       "thirds": [
+        {
+         "per_100": 25.806451612903224,
+         "low": 18.900672078205464,
+         "high": 32.53047693733514,
+         "n": 186
+        },
+        {
+         "per_100": 29.56989247311828,
+         "low": 22.776515151515152,
+         "high": 36.316985645933016,
+         "n": 186
+        },
+        {
+         "per_100": 53.51351351351351,
+         "low": 45.303111514251945,
+         "high": 61.883071459319844,
+         "n": 185
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 27.707061900610285,
+        "low": 17.64705071888221,
+        "high": 38.531560891832534
+       }
+      },
+      "phase3": {
+       "thirds": [
+        {
+         "per_100": 42.27272727272727,
+         "low": 35.41568396226415,
+         "high": 49.580519229114685,
+         "n": 220
+        },
+        {
+         "per_100": 65.8119658119658,
+         "low": 59.546172752808985,
+         "high": 71.55705967976711,
+         "n": 234
+        },
+        {
+         "per_100": 78.66666666666666,
+         "low": 72.19540698464465,
+         "high": 84.09240994854203,
+         "n": 225
+        }
+       ],
+       "top_minus_bottom": {
+        "value": 36.393939393939384,
+        "low": 26.81171103331932,
+        "high": 44.917927597638155
+       }
+      }
+     },
+     "survival": {
+      "top_minus_bottom": 38.05645780428748,
+      "within_strata": 29.911733555970528,
+      "share": 0.7859831230167889,
+      "n_strata": 13,
+      "n_strata_total": 16,
+      "share_interval": [
+       0.6838177416642677,
+       0.8737148188472839
+      ],
+      "within_strata_interval": [
+       22.45322689173005,
+       37.333991991874115
+      ]
+     }
+    }
+   }
+  },
+  "5": {
+   "failed": "",
+   "headline": {
+    "comparison": "logistic: registration: random-by-trial holdout minus the later trials, AUROC",
+    "value": -0.0010102634796860244,
+    "low": -0.05333653280698109,
+    "high": 0.049243378778987476,
+    "rule": "not met",
+    "range": "no range stated in the plan"
+   },
+   "by_drug": {
+    "value": 0.005004871388874177,
+    "low": -0.05282485195075717,
+    "high": 0.059966627290260914
+   },
+   "over_prediction": {
+    "later_gap_per_100": 4.6241372549062465,
+    "random_by_trial_gap_per_100": 0.16329013266007775,
+    "random_by_drug_gap_per_100": -0.27232323755530363,
+    "hidden": true,
+    "verdict": "met (by direction only: no interval)"
+   },
+   "study": {
+    "names": [
+     "lookup: phase",
+     "logistic: registration",
+     "memory: lead drug",
+     "ladder: registration + endpoint + history + genetics + words",
+     "text: drug names only"
+    ],
+    "honest": {
+     "lookup: phase": true,
+     "logistic: registration": true,
+     "memory: lead drug": false,
+     "ladder: registration + endpoint + history + genetics + words": true,
+     "text: drug names only": true
+    },
+    "n_pool": 5849,
+    "n_holdout": 1236,
+    "n_seeds": 20,
+    "auroc": {
+     "chronological": {
+      "lookup: phase": 0.6296417535222333,
+      "logistic: registration": 0.7303069187660399,
+      "memory: lead drug": 0.632924370188027,
+      "ladder: registration + endpoint + history + genetics + words": 0.748313518043262,
+      "text: drug names only": 0.6251112973341015
+     },
+     "random by trial": {
+      "lookup: phase": 0.614508692786793,
+      "logistic: registration": 0.7292966552863539,
+      "memory: lead drug": 0.6715213215420873,
+      "ladder: registration + endpoint + history + genetics + words": 0.7753261161888687,
+      "text: drug names only": 0.6727271338575489
+     },
+     "random by drug": {
+      "lookup: phase": 0.6167173344092403,
+      "logistic: registration": 0.7353117901549141,
+      "memory: lead drug": 0.5,
+      "ladder: registration + endpoint + history + genetics + words": 0.7641644251050622,
+      "text: drug names only": 0.6043670660233339
+     }
+    },
+    "auroc_ci": {
+     "chronological": {
+      "lookup: phase": [
+       0.6023512951449826,
+       0.6554586046421541
+      ],
+      "logistic: registration": [
+       0.6954500350658581,
+       0.7625948098929943
+      ],
+      "memory: lead drug": [
+       0.5906453583709103,
+       0.6720469131589841
+      ],
+      "ladder: registration + endpoint + history + genetics + words": [
+       0.7162085335956588,
+       0.7776368826273375
+      ],
+      "text: drug names only": [
+       0.5808498641298281,
+       0.6648530025876672
+      ]
+     },
+     "random by trial": {
+      "lookup: phase": [
+       0.5894046533783396,
+       0.6321743545887006
+      ],
+      "logistic: registration": [
+       0.6998943285069384,
+       0.7520984011674353
+      ],
+      "memory: lead drug": [
+       0.6403178165726203,
+       0.6919633222548343
+      ],
+      "ladder: registration + endpoint + history + genetics + words": [
+       0.7521373838913938,
+       0.8028914263802047
+      ],
+      "text: drug names only": [
+       0.6414848372781065,
+       0.6896667271872864
+      ]
+     },
+     "random by drug": {
+      "lookup: phase": [
+       0.5893821115100872,
+       0.6425811117723826
+      ],
+      "logistic: registration": [
+       0.7056122669198895,
+       0.7601071079772905
+      ],
+      "memory: lead drug": [
+       0.5,
+       0.5
+      ],
+      "ladder: registration + endpoint + history + genetics + words": [
+       0.7391714865331491,
+       0.783632226837095
+      ],
+      "text: drug names only": [
+       0.5646145305965589,
+       0.62683210660304
+      ]
+     }
+    },
+    "gap": {
+     "chronological": {
+      "lookup: phase": 6.757673420567,
+      "logistic: registration": 4.6241372549062465,
+      "memory: lead drug": 9.468503777676386,
+      "ladder: registration + endpoint + history + genetics + words": 3.0163717062469786,
+      "text: drug names only": 4.6023739943272135
+     },
+     "random by trial": {
+      "lookup: phase": -0.037727538988070464,
+      "logistic: registration": 0.16329013266007775,
+      "memory: lead drug": 2.1764573815478587,
+      "ladder: registration + endpoint + history + genetics + words": 0.2761245749171638,
+      "text: drug names only": -0.26101520022326624
+     },
+     "random by drug": {
+      "lookup: phase": -0.26990942104985544,
+      "logistic: registration": -0.27232323755530363,
+      "memory: lead drug": -0.4151644598335298,
+      "ladder: registration + endpoint + history + genetics + words": -0.6571712620118964,
+      "text: drug names only": -3.438412525626661
+     }
+    },
+    "flattery": {
+     "random by trial": {
+      "lookup: phase": [
+       -0.015133060735440296,
+       [
+        -0.059190646303049446,
+        0.02953773817479145
+       ]
+      ],
+      "logistic: registration": [
+       -0.0010102634796860244,
+       [
+        -0.05333653280698109,
+        0.049243378778987476
+       ]
+      ],
+      "memory: lead drug": [
+       0.03859695135406027,
+       [
+        -0.019907817662882233,
+        0.09951243966949845
+       ]
+      ],
+      "ladder: registration + endpoint + history + genetics + words": [
+       0.027012598145606748,
+       [
+        -0.020815882573242926,
+        0.0744535862988011
+       ]
+      ],
+      "text: drug names only": [
+       0.047615836523447364,
+       [
+        -0.01177297080450263,
+        0.10712669909351674
+       ]
+      ]
+     },
+     "random by drug": {
+      "lookup: phase": [
+       -0.012924419112993024,
+       [
+        -0.06029247077606055,
+        0.035160885528219984
+       ]
+      ],
+      "logistic: registration": [
+       0.005004871388874177,
+       [
+        -0.05282485195075717,
+        0.059966627290260914
+       ]
+      ],
+      "memory: lead drug": [
+       -0.13292437018802705,
+       [
+        -0.17204691315898415,
+        -0.09064535837091023
+       ]
+      ],
+      "ladder: registration + endpoint + history + genetics + words": [
+       0.015850907061800257,
+       [
+        -0.03553986586699552,
+        0.06520011464417443
+       ]
+      ],
+      "text: drug names only": [
+       -0.020744231310767636,
+       [
+        -0.10101424986393537,
+        0.043461356867146854
+       ]
+      ]
+     }
+    },
+    "winners": {
+     "chronological": "ladder: registration + endpoint + history + genetics + words",
+     "random by trial": "ladder: registration + endpoint + history + genetics + words",
+     "random by drug": "ladder: registration + endpoint + history + genetics + words"
+    },
+    "crossover": {
+     "chronological": {
+      "random by trial": 0.0,
+      "random by drug": 0.0
+     },
+     "random by trial": {
+      "chronological": 0.0,
+      "random by drug": 0.0
+     },
+     "random by drug": {
+      "chronological": 0.0,
+      "random by trial": 0.0
+     }
+    },
+    "spearman": {
+     "chronological vs random by trial": 0.7999999999999999,
+     "chronological vs random by drug": 1.0,
+     "random by trial vs random by drug": 0.7999999999999999
+    },
+    "composition": {
+     "chronological": {
+      "share_older": 0.0,
+      "success_rate": 0.5064724919093851,
+      "baseline_auroc_older": null,
+      "baseline_auroc_later": 0.7303069187660399
+     },
+     "random by trial": {
+      "share_older": 0.825606796116505,
+      "success_rate": 0.5710355987055016,
+      "baseline_auroc_older": 0.7268656398973995,
+      "baseline_auroc_later": 0.733913984797168
+     },
+     "random by drug": {
+      "share_older": 0.8297330097087379,
+      "success_rate": 0.5740695792880259,
+      "baseline_auroc_older": 0.7348410598007679,
+      "baseline_auroc_later": 0.7321760416532946
+     }
+    }
+   }
+  },
+  "8": {
+   "failed": "",
+   "headline_links": "today",
+   "versions": {
+    "today": {
+     "n_trials": 766,
+     "n_train": 4244,
+     "cuts": [
+      0.5619653500680245,
+      0.6636502473785091
+     ],
+     "flag_coefficients": {
+      "f_broad": -0.4156243452706959,
+      "f_vital": -0.170715736768019,
+      "f_essential": -0.07996146381873692,
+      "f_intracellular": -0.3122432675016306,
+      "f_activator": -0.06822410875419929,
+      "f_lowqed": -0.029414298286926346
+     },
+     "flags": {
+      "value": -10.095382847842219,
+      "low": -20.792255176283685,
+      "high": 1.153462683440352,
+      "n_exposed": 238,
+      "n_reference": 290,
+      "rule": "not met",
+      "range": "outside, but the interval overlaps the range"
+     },
+     "thirds": {
+      "value": 23.872990608213755,
+      "low": 13.319499475423482,
+      "high": 33.727243091690745,
+      "n_exposed": 230,
+      "n_reference": 248,
+      "rule": "met",
+      "range": "outside, but the interval overlaps the range"
+     },
+     "by_flags": [
+      {
+       "phase": "phase2",
+       "group": "0",
+       "n": 88,
+       "per_100": 36.36363636363637,
+       "low": 25.674809424809425,
+       "high": 47.128051142967834
+      },
+      {
+       "phase": "phase2",
+       "group": "1",
+       "n": 84,
+       "per_100": 46.42857142857143,
+       "low": 34.08279220779221,
+       "high": 58.97590361445783
+      },
+      {
+       "phase": "phase2",
+       "group": "2+",
+       "n": 86,
+       "per_100": 27.906976744186046,
+       "low": 18.51851851851852,
+       "high": 37.93384557721138
+      },
+      {
+       "phase": "phase3",
+       "group": "0",
+       "n": 202,
+       "per_100": 68.8118811881188,
+       "low": 59.47703818369453,
+       "high": 77.15736040609137
+      },
+      {
+       "phase": "phase3",
+       "group": "1",
+       "n": 154,
+       "per_100": 59.09090909090909,
+       "low": 50.950468056359774,
+       "high": 66.67159763313606
+      },
+      {
+       "phase": "phase3",
+       "group": "2+",
+       "n": 152,
+       "per_100": 57.89473684210527,
+       "low": 47.17999171499586,
+       "high": 67.26190476190477
+      }
+     ],
+     "by_thirds": [
+      {
+       "phase": "phase2",
+       "group": "low",
+       "n": 95,
+       "per_100": 33.68421052631579,
+       "low": 24.175824175824175,
+       "high": 43.61854976766935
+      },
+      {
+       "phase": "phase2",
+       "group": "mid",
+       "n": 96,
+       "per_100": 29.166666666666668,
+       "low": 18.997222222222224,
+       "high": 39.77330705009276
+      },
+      {
+       "phase": "phase2",
+       "group": "high",
+       "n": 67,
+       "per_100": 52.23880597014925,
+       "low": 38.98250055029716,
+       "high": 64.51612903225806
+      },
+      {
+       "phase": "phase3",
+       "group": "low",
+       "n": 153,
+       "per_100": 47.712418300653596,
+       "low": 39.2632212471849,
+       "high": 56.251034768211916
+      },
+      {
+       "phase": "phase3",
+       "group": "mid",
+       "n": 192,
+       "per_100": 64.58333333333334,
+       "low": 56.14949807674267,
+       "high": 72.35364145658264
+      },
+      {
+       "phase": "phase3",
+       "group": "high",
+       "n": 163,
+       "per_100": 74.23312883435584,
+       "low": 64.91016333938295,
+       "high": 82.28586309523808
+      }
+     ],
+     "unseen": {
+      "n_trials": 30,
+      "flags": {
+       "value": null,
+       "low": null,
+       "high": null,
+       "n_exposed": 14,
+       "n_reference": 9,
+       "direction": "too few trials to say"
+      },
+      "thirds": {
+       "value": null,
+       "low": null,
+       "high": null,
+       "n_exposed": 5,
+       "n_reference": 8,
+       "direction": "too few trials to say"
+      }
+     }
+    },
+    "2020": {
+     "n_trials": 542,
+     "n_train": 3811,
+     "cuts": [
+      0.5699862312688214,
+      0.6733072996471099
+     ],
+     "flag_coefficients": {
+      "f_broad": -0.526144933710005,
+      "f_vital": -0.30437913147316803,
+      "f_essential": -0.11681623649089017,
+      "f_intracellular": -0.27293794834096535,
+      "f_activator": -0.09642435069051618,
+      "f_lowqed": 0.014965320042429512
+     },
+     "flags": {
+      "value": -2.9356967346760747,
+      "low": -16.04067849554309,
+      "high": 10.137877296852352,
+      "n_exposed": 169,
+      "n_reference": 209,
+      "rule": "not met",
+      "range": "inside the predicted range"
+     },
+     "thirds": {
+      "value": 21.326115781217823,
+      "low": 8.712234446018805,
+      "high": 32.988285772098926,
+      "n_exposed": 169,
+      "n_reference": 196,
+      "rule": "met",
+      "range": "outside, but the interval overlaps the range"
+     },
+     "by_flags": [
+      {
+       "phase": "phase2",
+       "group": "0",
+       "n": 63,
+       "per_100": 28.57142857142857,
+       "low": 16.129032258064516,
+       "high": 40.29910929224843
+      },
+      {
+       "phase": "phase2",
+       "group": "1",
+       "n": 46,
+       "per_100": 43.47826086956522,
+       "low": 26.82926829268293,
+       "high": 60.0
+      },
+      {
+       "phase": "phase2",
+       "group": "2+",
+       "n": 57,
+       "per_100": 28.07017543859649,
+       "low": 17.240032327586206,
+       "high": 39.69047619047614
+      },
+      {
+       "phase": "phase3",
+       "group": "0",
+       "n": 146,
+       "per_100": 63.013698630136986,
+       "low": 51.74706246134818,
+       "high": 73.38915404871625
+      },
+      {
+       "phase": "phase3",
+       "group": "1",
+       "n": 118,
+       "per_100": 52.54237288135594,
+       "low": 43.393051523947754,
+       "high": 61.15827158734681
+      },
+      {
+       "phase": "phase3",
+       "group": "2+",
+       "n": 112,
+       "per_100": 58.92857142857143,
+       "low": 45.68819049213258,
+       "high": 69.29966044142614
+      }
+     ],
+     "by_thirds": [
+      {
+       "phase": "phase2",
+       "group": "low",
+       "n": 69,
+       "per_100": 30.434782608695656,
+       "low": 20.0,
+       "high": 42.028985507246375
+      },
+      {
+       "phase": "phase2",
+       "group": "mid",
+       "n": 53,
+       "per_100": 32.075471698113205,
+       "low": 18.36270871985158,
+       "high": 47.05882352941176
+      },
+      {
+       "phase": "phase2",
+       "group": "high",
+       "n": 44,
+       "per_100": 36.36363636363637,
+       "low": 20.51282051282051,
+       "high": 52.50328947368419
+      },
+      {
+       "phase": "phase3",
+       "group": "low",
+       "n": 127,
+       "per_100": 43.30708661417323,
+       "low": 33.33333333333333,
+       "high": 52.14192708333331
+      },
+      {
+       "phase": "phase3",
+       "group": "mid",
+       "n": 124,
+       "per_100": 61.29032258064516,
+       "low": 50.450251136091836,
+       "high": 70.50571307659753
+      },
+      {
+       "phase": "phase3",
+       "group": "high",
+       "n": 125,
+       "per_100": 71.2,
+       "low": 60.70958646616541,
+       "high": 80.60641296687808
+      }
+     ],
+     "unseen": {
+      "n_trials": 5,
+      "flags": {
+       "value": null,
+       "low": null,
+       "high": null,
+       "n_exposed": 3,
+       "n_reference": 1,
+       "direction": "too few trials to say"
+      },
+      "thirds": {
+       "value": null,
+       "low": null,
+       "high": null,
+       "n_exposed": 0,
+       "n_reference": 4,
+       "direction": "too few trials to say"
+      }
+     }
+    },
+    "2020_names": {
+     "n_trials": 551,
+     "n_train": 4070,
+     "cuts": [
+      0.576015486274143,
+      0.6688834563808267
+     ],
+     "flag_coefficients": {
+      "f_broad": -0.44835820894028866,
+      "f_vital": -0.37623415843526703,
+      "f_essential": -0.057055460076670915,
+      "f_intracellular": -0.255015046741992,
+      "f_activator": 0.0,
+      "f_lowqed": 0.0
+     },
+     "flags": {
+      "value": -1.550678436751724,
+      "low": -15.19286720097067,
+      "high": 11.518604656742431,
+      "n_exposed": 142,
+      "n_reference": 267,
+      "rule": "not met",
+      "range": "outside, but the interval overlaps the range"
+     },
+     "thirds": {
+      "value": 23.50803490933425,
+      "low": 10.087692524768123,
+      "high": 35.9054687105091,
+      "n_exposed": 149,
+      "n_reference": 212,
+      "rule": "met",
+      "range": "outside, but the interval overlaps the range"
+     },
+     "by_flags": [
+      {
+       "phase": "phase2",
+       "group": "0",
+       "n": 83,
+       "per_100": 27.710843373493976,
+       "low": 16.853932584269664,
+       "high": 38.89227642276421
+      },
+      {
+       "phase": "phase2",
+       "group": "1",
+       "n": 42,
+       "per_100": 50.0,
+       "low": 33.33333333333333,
+       "high": 65.9090909090909
+      },
+      {
+       "phase": "phase2",
+       "group": "2+",
+       "n": 46,
+       "per_100": 28.26086956521739,
+       "low": 16.27906976744186,
+       "high": 40.909090909090914
+      },
+      {
+       "phase": "phase3",
+       "group": "0",
+       "n": 184,
+       "per_100": 60.86956521739131,
+       "low": 51.57136242620673,
+       "high": 69.39922854387657
+      },
+      {
+       "phase": "phase3",
+       "group": "1",
+       "n": 100,
+       "per_100": 56.00000000000001,
+       "low": 45.881127450980394,
+       "high": 65.48748855660665
+      },
+      {
+       "phase": "phase3",
+       "group": "2+",
+       "n": 96,
+       "per_100": 58.333333333333336,
+       "low": 43.37124617874483,
+       "high": 70.87675090787815
+      }
+     ],
+     "by_thirds": [
+      {
+       "phase": "phase2",
+       "group": "low",
+       "n": 69,
+       "per_100": 28.985507246376812,
+       "low": 18.30985915492958,
+       "high": 40.0
+      },
+      {
+       "phase": "phase2",
+       "group": "mid",
+       "n": 56,
+       "per_100": 28.57142857142857,
+       "low": 15.517241379310345,
+       "high": 42.593351548269574
+      },
+      {
+       "phase": "phase2",
+       "group": "high",
+       "n": 46,
+       "per_100": 45.65217391304348,
+       "low": 29.785796434732603,
+       "high": 62.50726744186043
+      },
+      {
+       "phase": "phase3",
+       "group": "low",
+       "n": 143,
+       "per_100": 46.15384615384615,
+       "low": 36.56716417910448,
+       "high": 54.37591911764705
+      },
+      {
+       "phase": "phase3",
+       "group": "mid",
+       "n": 134,
+       "per_100": 61.940298507462686,
+       "low": 52.21049844943651,
+       "high": 70.75042517006803
+      },
+      {
+       "phase": "phase3",
+       "group": "high",
+       "n": 103,
+       "per_100": 72.81553398058253,
+       "low": 60.49310938845823,
+       "high": 83.05118917441224
+      }
+     ],
+     "unseen": {
+      "n_trials": 6,
+      "flags": {
+       "value": null,
+       "low": null,
+       "high": null,
+       "n_exposed": 4,
+       "n_reference": 1,
+       "direction": "too few trials to say"
+      },
+      "thirds": {
+       "value": null,
+       "low": null,
+       "high": null,
+       "n_exposed": 0,
+       "n_reference": 5,
+       "direction": "too few trials to say"
+      }
+     }
+    }
+   }
+  },
+  "6": {
+   "failed": "",
+   "path": "outputs/final2/predictions.parquet",
+   "rows": 1236,
+   "models": 40,
+   "biology_columns": [
+    "biology today: score",
+    "biology today: flags",
+    "biology today: flag group",
+    "biology today: third",
+    "biology today: unseen targets",
+    "biology 2020: score",
+    "biology 2020: flags",
+    "biology 2020: flag group",
+    "biology 2020: third",
+    "biology 2020: unseen targets",
+    "biology 2020_names: score",
+    "biology 2020_names: flags",
+    "biology 2020_names: flag group",
+    "biology 2020_names: third",
+    "biology 2020_names: unseen targets"
+   ],
+   "ignored": true
+  },
+  "7": {
+   "failed": "",
+   "comparisons": {
+    "final": {
+     "comparable": true,
+     "wider": 135,
+     "narrower": 24,
+     "unchanged": 157,
+     "median_width_ratio": 1.0829510703363914,
+     "zero_exclusion_changed": [
+      {
+       "row": "neural network: registration",
+       "single_trial": "-0.000 to +0.018",
+       "lead_drug": "+0.001 to +0.018",
+       "change": "included zero, now excludes it"
+      }
+     ],
+     "wording_changed": []
+    },
+    "scorecard": {
+     "comparable": true,
+     "wider": 8,
+     "narrower": 2,
+     "unchanged": 16,
+     "median_width_ratio": 1.0714285714285714,
+     "zero_exclusion_changed": [
+      {
+       "row": "3 | therapeutic_area",
+       "single_trial": "0.001 to 0.024",
+       "lead_drug": "0.000 to 0.025",
+       "change": "excluded zero, now includes it"
+      }
+     ],
+     "wording_changed": []
+    }
+   },
+   "verdict": {
+    "wider": "met",
+    "no_verdict_changes": "not met",
+    "intervals_wider": 143,
+    "intervals_narrower": 26,
+    "lines_with_a_changed_verdict": 2
+   },
+   "files": [
+    "results/test_final2_item7_final.md",
+    "results/test_final2_item7_scorecard.md"
+   ]
+  }
+ },
+ "plan": {
+  "1": {
+   "what": "Hierarchical model (partially pooled effects for target, condition, sponsor, drug, area) against the registration baseline",
+   "expectation": "about +0.03 AUROC"
+  },
+  "2": {
+   "what": "Registration plus the precedent flag, for three link versions (today's; targets dated to June 2020; drug names and targets dated). Headline: the strict flag (experimental arms only) on the fully dated version",
+   "expectation": "strict version +0.005 to +0.01"
+  },
+  "3": {
+   "what": "HOW (registration without therapeutic area), WHAT (disease, target, precedent, genetics, biology), and both",
+   "expectation": "both beats HOW by +0.015 to +0.03; WHAT alone about 0.66"
+  },
+  "4": {
+   "what": "Phase 2 success by third of the WHAT score",
+   "expectation": "top third beats bottom third by 15 to 25 per 100 trials"
+  },
+  "5": {
+   "what": "Split study with the test set as the \"later\" holdout, against random holdouts of the same size",
+   "expectation": "a random split flatters the baseline by about 0.03 AUROC and hides the over-prediction"
+  },
+  "6": {
+   "what": "Per-trial predictions saved for the baseline and the models above",
+   "expectation": "none; needed to draw development and test curves side by side"
+  },
+  "7": {
+   "what": "Intervals for the earlier results regenerated with resampling by lead drug",
+   "expectation": "wider; no verdict changes"
+  },
+  "8": {
+   "what": "A biology-only score, within phase: (a) a count of six risk flags fixed in advance (target expressed in nearly every tissue; high expression in vital organs; gene essential to cells; intracellular target; drug activates its target; low drug-likeness), trials with two or more flags against trials with none; (b) a logistic model on biology columns only, top third against bottom third. No phase, sponsor, disease area, design, precedent, genetics or earlier outcome goes in. Thresholds are the ones fixed on trials before 2015; the logistic model is refitted on all development trials by the declared recipe",
+   "expectation": "(a) 2 to 10 fewer successes per 100 with two or more flags; (b) 5 to 15 more in the top third. On development trials from 2015 to 2020 these were 8.1 fewer (14.6 to 1.7) and 16.6 more (10 to 23), and I expect them to shrink again. On trials whose targets appear in no development trial: same direction, too few to say more"
+  }
+ }
+}
