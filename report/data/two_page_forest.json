@@ -1,0 +1,200 @@
+{
+  "what": "AUROC minus the registration baseline's, test set (1,236 trials finished 2021 to 2023), 95% intervals resampling lead drugs; development-validation difference beside it where a committed dev file has one.",
+  "baseline_auroc": 0.73,
+  "rows": [
+    {
+      "group": "First-run models",
+      "label": "Phase alone",
+      "model": "lookup: phase",
+      "leaky": false,
+      "test": {
+        "estimate": -0.101,
+        "lo": -0.129,
+        "hi": -0.072,
+        "source": "results/test_final2_item7_final.md: row 'lookup: phase', column 'AUROC minus registration'"
+      },
+      "development": {
+        "estimate": -0.099,
+        "lo": -0.119,
+        "hi": -0.079,
+        "source": "results/dev_models.md: row 'lookup: phase', column 'AUROC minus registration', section 'Time-ordered check (2795 validation trials, three rounds) > Honest models'"
+      }
+    },
+    {
+      "group": "First-run models",
+      "label": "Adds words and three more tables",
+      "model": "ladder: registration + endpoint + history + genetics + words",
+      "leaky": false,
+      "test": {
+        "estimate": 0.018,
+        "lo": -0.001,
+        "hi": 0.039,
+        "source": "results/test_final2_item7_final.md: row 'ladder: registration + endpoint + history + genetics + words', column 'AUROC minus registration'"
+      },
+      "development": {
+        "estimate": 0.036,
+        "lo": 0.024,
+        "hi": 0.049,
+        "source": "results/dev_models.md: row 'ladder: registration + endpoint + history + genetics + words', column 'AUROC minus registration', section 'Time-ordered check (2795 validation trials, three rounds) > Honest models'"
+      }
+    },
+    {
+      "group": "First-run models",
+      "label": "Boosted trees on the extra tables",
+      "model": "ladder: boosted trees, endpoint + history + genetics",
+      "leaky": false,
+      "test": {
+        "estimate": 0.024,
+        "lo": 0.009,
+        "hi": 0.041,
+        "source": "results/test_final2_item7_final.md: row 'ladder: boosted trees, endpoint + history + genetics', column 'AUROC minus registration'"
+      },
+      "development": {
+        "estimate": 0.026,
+        "lo": 0.016,
+        "hi": 0.037,
+        "source": "results/dev_models.md: row 'ladder: boosted trees, endpoint + history + genetics', column 'AUROC minus registration', section 'Time-ordered check (2795 validation trials, three rounds) > Honest models'"
+      }
+    },
+    {
+      "group": "First-run models",
+      "label": "Adds all public biology sources",
+      "model": "biology: registration + all sources",
+      "leaky": false,
+      "test": {
+        "estimate": 0.012,
+        "lo": 0.001,
+        "hi": 0.022,
+        "source": "results/test_final2_item7_final.md: row 'biology: registration + all sources', column 'AUROC minus registration'"
+      },
+      "development": {
+        "estimate": -0.002,
+        "lo": -0.009,
+        "hi": 0.006,
+        "source": "results/dev_models.md: row 'biology: registration + all sources', column 'AUROC minus registration', section 'Time-ordered check (2795 validation trials, three rounds) > Honest models'"
+      }
+    },
+    {
+      "group": "First-run models",
+      "label": "Leaky: fields edited after the trial",
+      "model": "leaky: registration + post-hoc fields",
+      "leaky": true,
+      "test": {
+        "estimate": 0.048,
+        "lo": 0.03,
+        "hi": 0.067,
+        "source": "results/test_final2_item7_final.md: row 'leaky: registration + post-hoc fields', column 'AUROC minus registration'"
+      },
+      "development": {
+        "estimate": 0.029,
+        "lo": 0.019,
+        "hi": 0.039,
+        "source": "results/dev_models.md: row 'leaky: registration + post-hoc fields', column 'AUROC minus registration', section 'Time-ordered check (2795 validation trials, three rounds) > Not honest (deliberately leaky)'"
+      }
+    },
+    {
+      "group": "Hierarchical models",
+      "label": "Disease, drug, target, sponsor effects",
+      "model": "hierarchical: full hierarchy",
+      "leaky": false,
+      "test": {
+        "estimate": 0.038,
+        "lo": 0.018,
+        "hi": 0.057,
+        "source": "results/test_final2.md: row 'hierarchical: full hierarchy', column 'AUROC minus logistic: registration'"
+      },
+      "development": {
+        "estimate": 0.025,
+        "lo": 0.014,
+        "hi": 0.038,
+        "source": "results/dev_hierarchy.md: row 'full hierarchy' / links 'today', columns 'gain' and '95% interval, drugs resampled'"
+      }
+    },
+    {
+      "group": "Hierarchical models",
+      "label": "The same, plus precedent and genetics",
+      "model": "hierarchical: full + precedent + genetics",
+      "leaky": false,
+      "test": {
+        "estimate": 0.043,
+        "lo": 0.023,
+        "hi": 0.064,
+        "source": "results/test_final2.md: row 'hierarchical: full + precedent + genetics', column 'AUROC minus logistic: registration'"
+      },
+      "development": {
+        "estimate": 0.032,
+        "lo": 0.02,
+        "hi": 0.045,
+        "source": "results/dev_hierarchy.md: row 'full + precedent + genetics' / links 'today', columns 'gain' and '95% interval, drugs resampled'"
+      }
+    },
+    {
+      "group": "Precedent: same target already in Phase 3",
+      "label": "Today's databases",
+      "model": "logistic: registration + precedent (today's links, experimental arms only)",
+      "leaky": false,
+      "test": {
+        "estimate": 0.011,
+        "lo": 0.002,
+        "hi": 0.021,
+        "source": "results/test_final2.md: row 'logistic: registration + precedent (today's links, experimental arms only)', column 'AUROC minus logistic: registration'"
+      },
+      "development": {
+        "estimate": 0.01,
+        "lo": 0.004,
+        "hi": 0.016,
+        "source": "results/dev_precedent.md: row 'logistic: registration + precedent (today's links, experimental arms only)', column 'gain over registration, lead drugs resampled'"
+      }
+    },
+    {
+      "group": "Precedent: same target already in Phase 3",
+      "label": "Drug names and links dated to mid 2020",
+      "model": "logistic: registration + precedent (2020 names and links, experimental arms only)",
+      "leaky": false,
+      "test": {
+        "estimate": -0.0,
+        "lo": -0.008,
+        "hi": 0.009,
+        "source": "results/test_final2.md: row 'logistic: registration + precedent (2020 names and links, experimental arms only)', column 'AUROC minus logistic: registration'"
+      },
+      "development": {
+        "estimate": 0.007,
+        "lo": 0.001,
+        "hi": 0.013,
+        "source": "results/dev_precedent.md: row 'logistic: registration + precedent (2020 names and links, experimental arms only)', column 'gain over registration, lead drugs resampled'"
+      }
+    },
+    {
+      "group": "Disease and target, dated to mid 2020",
+      "label": "Disease, target and biology only",
+      "model": "logistic: WHAT (2020 names and links)",
+      "leaky": false,
+      "test": {
+        "estimate": -0.041,
+        "lo": -0.075,
+        "hi": -0.006,
+        "source": "results/test_final2.md: row 'logistic: WHAT (2020 names and links)', column 'AUROC minus logistic: registration'"
+      },
+      "development": null
+    },
+    {
+      "group": "Disease and target, dated to mid 2020",
+      "label": "Registration + disease, target, biology",
+      "model": "logistic: HOW + WHAT (2020 names and links)",
+      "leaky": false,
+      "test": {
+        "estimate": 0.026,
+        "lo": 0.013,
+        "hi": 0.041,
+        "source": "results/test_final2.md: row 'logistic: HOW + WHAT (2020 names and links)', column 'AUROC minus logistic: registration'"
+      },
+      "development": {
+        "estimate": 0.014,
+        "lo": 0.005,
+        "hi": 0.023,
+        "source": "results/dev_whathow.md: row 'HOW + WHAT minus the registration baseline', column 'AUROC difference', section '2020 names and links (drug matched by 20.06 names, 20.06 targets) > Time-ordered rounds'"
+      }
+    }
+  ],
+  "left_out": []
+}

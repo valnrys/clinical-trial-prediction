@@ -1,0 +1,38 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Data stays out of git; the folders are kept with .gitkeep
+data/raw/*
+data/interim/*
+data/heldout/*
+!data/*/.gitkeep
+
+# Report figures are tracked; other outputs are not
+outputs/*
+!outputs/figures/
+
+# The brief and background reading are confidential
+task/*
+!task/.gitkeep
+
+.ipynb_checkpoints/
+.DS_Store
+.env
+
+# Report: only the two-page report, its builder and its drawn numbers are tracked
+report/*
+!report/two_page.md
+!report/two_page.html
+!report/two_page.pdf
+!report/build_two_page.py
+!report/data/
+report/data/*
+!report/data/two_page_*.json

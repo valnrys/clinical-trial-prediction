@@ -1,0 +1,16 @@
+# Does a random test split change a model's score? (development data only)
+
+Pool: 4915 trials finished before 2019. Later holdout: 934 trials finished in or after 2019. Random holdouts have the same size (20 seeds each). Later trials: AUROC with a 95% interval from resampling whole lead drugs. Random splits: the mean AUROC over seeds, with the lowest to highest seed in brackets. Each difference is the random score minus the later-trials score; its 95% interval comes from 1,000 draws, each resampling whole lead drugs in one randomly chosen seed's holdout and, separately, in the later trials, so it covers seed-to-seed spread and sampling together. A gap above 0 means the model is too optimistic. No held-out test trial is used.
+
+| Model | Later trials | Random by trial | Random by drug | Random by trial minus later | Random by drug minus later | Gap per 100: later / by trial / by drug |
+|---|---|---|---|---|---|---|
+| logistic: registration | 0.700 (0.660 to 0.733) | 0.728 (0.696 to 0.760) | 0.726 (0.689 to 0.762) | +0.028 (-0.029 to +0.091) | +0.026 (-0.041 to +0.094) | +5.6 / +0.0 / -0.0 |
+| full ladder (all four extra tables + words) | 0.738 (0.702 to 0.771) | 0.770 (0.745 to 0.800) | 0.757 (0.721 to 0.784) | +0.032 (-0.025 to +0.089) | +0.019 (-0.045 to +0.082) | +3.9 / +0.0 / -0.6 |
+| memory: lead drug | 0.624 (0.582 to 0.665) | 0.674 (0.646 to 0.709) | 0.500 (0.500 to 0.500) | +0.050 (-0.014 to +0.114) | -0.124 (-0.165 to -0.082) | +10.0 / +2.2 / -0.2 |
+| text: drug names only | 0.604 (0.561 to 0.644) | 0.667 (0.624 to 0.703) | 0.592 (0.549 to 0.635) | +0.064 (-0.004 to +0.128) | -0.011 (-0.079 to +0.057) | +7.0 / -0.2 / -3.5 |
+| lookup: phase | 0.600 (0.562 to 0.633) | 0.613 (0.588 to 0.634) | 0.614 (0.581 to 0.640) | +0.013 (-0.037 to +0.064) | +0.014 (-0.043 to +0.068) | +6.7 / -0.0 / -0.1 |
+
+- **Scores are higher under random-by-trial.** 40 of 41 models score higher than on the later trials; for 0 of them the interval of the difference excludes zero. The baseline scores 0.700 on the 934 later trials and 0.728 / 0.726 on random holdouts of the same size (by trial / by drug). Its calibration gap goes from +5.6 to +0.0 / -0.0 per 100 trials.
+- **Drug-name memory is helped by random-by-trial and hurt by random-by-drug** (difference from the later-trials score): memory: lead drug: +0.050 by trial, -0.124 by drug; text: drug names only: +0.064 by trial, -0.011 by drug. A random-by-drug holdout keeps every lead drug on one side, but a combination trial can still share a non-lead drug across the two sides.
+- **Random holdouts are older and easier.** 84% of a random-by-trial holdout finished before 2019, against 0% of the later trials; the baseline ranks those older trials at 0.731 but the later ones in the same holdout at 0.700. The overall success rate is 58 versus 51 per 100 trials.
+- **Choosing on one split and being judged on the other.** The winner changes with the split: chronological: biology: ladder, all four tables + science; random by trial: ladder: registration + endpoint + history + genetics + words; random by drug: ladder: registration + endpoint + history + genetics + words. Rank agreement between the later-trials and random-by-trial splits is 0.91 (Spearman; 1 means the same order; over 40 honest models). The most AUROC lost by picking on one split and being judged on another is 0.001.
